@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='GitLab Community Edition' name='description'>
+<title>
+web/icomoon/fonts/icomoon.svg at master | 
+GitLab
+</title>
+<link href="/assets/favicon-baaa14bade1248aa6165e9d34e7d83c0.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="/assets/application-fe128d6b99fe419c85a904c4ad557445.css" media="all" rel="stylesheet" />
+<link href="/assets/print-1df3ea9b8ff148a6745321899e0cb213.css" media="print" rel="stylesheet" />
+<script src="/assets/application-ca6f5dab5116cf72bfc9a3933e91c787.js"></script>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="G4Jz4h0z7bZsJetSYm2UaoEYE6H6ZYgKzdFxIuyCVJ0=" name="csrf-token" />
+<script type="text/javascript">
+//<![CDATA[
+window.gon={};gon.default_issues_tracker="gitlab";gon.api_version="v3";gon.relative_url_root="";gon.default_avatar_url="https://git.forforce.com/assets/no_avatar-3656d6f42d5007925a0cfb4b1e3bb1f1.png";gon.current_user_id=12;gon.api_token="e33sBJUnCwoy4xHRmucs";
+//]]>
+</script>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+<meta content='#474D57' name='theme-color'>
+
+
+</head>
+
+<body class='ui_mars dark_theme project' data-page='projects:blob:show' data-project-id='77'>
+<header class='navbar navbar-fixed-top navbar-gitlab'>
+<div class='navbar-inner'>
+<div class='container'>
+<div class='app_logo'>
+<a class="home has_bottom_tooltip" href="/" title="Dashboard"><h1>GITLAB</h1>
+</a></div>
+<h1 class='title'><span><a href="/groups/forforce-dev">Developers</a> / <a href="/forforce-dev/Bellatrade">Bellatrade</a></span></h1>
+<button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<i class='fa fa-bars'></i>
+</button>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav'>
+<li class='hidden-sm hidden-xs'>
+<div class='search'>
+<form accept-charset="UTF-8" action="/search" class="navbar-form pull-left" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input class="search-input" id="search" name="search" placeholder="Search in this project" type="search" />
+<input id="group_id" name="group_id" type="hidden" />
+<input id="project_id" name="project_id" type="hidden" value="77" />
+<input id="search_code" name="search_code" type="hidden" value="true" />
+<input id="repository_ref" name="repository_ref" type="hidden" value="master" />
+
+<div class='search-autocomplete-opts hide' data-autocomplete-path='/search/autocomplete' data-autocomplete-project-id='77' data-autocomplete-project-ref='master'></div>
+</form>
+
+</div>
+<script>
+  $('.search-input').on('keyup', function(e) {
+    if (e.keyCode == 27) {
+      $('.search-input').blur()
+    }
+  })
+</script>
+
+</li>
+<li class='visible-sm visible-xs'>
+<a class="has_bottom_tooltip" data-original-title="Search area" href="/search" title="Search"><i class='fa fa-search'></i>
+</a></li>
+<li>
+<a class="has_bottom_tooltip" data-original-title="Help" href="/help" title="Help"><i class='fa fa-question-circle'></i>
+</a></li>
+<li>
+<a class="has_bottom_tooltip" data-original-title="Public area" href="/explore" title="Explore"><i class='fa fa-globe'></i>
+</a></li>
+<li>
+<a class="has_bottom_tooltip" data-original-title="My snippets" href="/s/dkostrub" title="My snippets"><i class='fa fa-clipboard'></i>
+</a></li>
+<li>
+<a class="has_bottom_tooltip" data-original-title="New project" href="/projects/new" title="New project"><i class='fa fa-plus'></i>
+</a></li>
+<li>
+<a class="has_bottom_tooltip" data-original-title="Profile settings&quot;" href="/profile" title="Profile settings"><i class='fa fa-user'></i>
+</a></li>
+<li>
+<a class="has_bottom_tooltip" data-method="delete" data-original-title="Logout" href="/users/sign_out" rel="nofollow" title="Logout"><i class='fa fa-sign-out'></i>
+</a></li>
+<li class='hidden-xs'>
+<a class="profile-pic" href="/u/dkostrub" id="profile-pic"><img alt="User activity" src="https://git.forforce.com/uploads/user/avatar/12/_MG_9059.jpg" />
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+
+
+<script>
+  GitLab.GfmAutoComplete.dataSource = "/forforce-dev/Bellatrade/autocomplete_sources?type=NilClass&type_id=master%2Fweb%2Ficomoon%2Ffonts%2Ficomoon.svg"
+  GitLab.GfmAutoComplete.setup();
+</script>
+
+<div class='page-sidebar-expanded page-with-sidebar'>
+
+<div class='sidebar-wrapper'>
+<ul class='project-navigation nav nav-sidebar'>
+<li class="home"><a class="shortcuts-project" href="/forforce-dev/Bellatrade" title="Project"><i class='fa fa-dashboard'></i>
+<span>
+Project
+</span>
+</a></li><li class="active"><a class="shortcuts-tree" href="/forforce-dev/Bellatrade/tree/master" title="Files"><i class='fa fa-files-o'></i>
+<span>
+Files
+</span>
+</a></li><li class=""><a class="shortcuts-commits" href="/forforce-dev/Bellatrade/commits/master" title="Commits"><i class='fa fa-history'></i>
+<span>
+Commits
+</span>
+</a></li><li class=""><a class="shortcuts-network" href="/forforce-dev/Bellatrade/network/master" title="Network"><i class='fa fa-code-fork'></i>
+<span>
+Network
+</span>
+</a></li><li class=""><a class="shortcuts-graphs" href="/forforce-dev/Bellatrade/graphs/master" title="Graphs"><i class='fa fa-area-chart'></i>
+<span>
+Graphs
+</span>
+</a></li><li class=""><a class="shortcuts-issues" href="/forforce-dev/Bellatrade/issues" title="Issues"><i class='fa fa-exclamation-circle'></i>
+<span>
+Issues
+<span class='count issue_counter'>0</span>
+</span>
+</a></li><li class=""><a class="shortcuts-merge_requests" href="/forforce-dev/Bellatrade/merge_requests" title="Merge Requests"><i class='fa fa-tasks'></i>
+<span>
+Merge Requests
+<span class='count merge_counter'>0</span>
+</span>
+</a></li><li class=""><a class="shortcuts-wiki" href="/forforce-dev/Bellatrade/wikis/home" title="Wiki"><i class='fa fa-book'></i>
+<span>
+Wiki
+</span>
+</a></li></ul>
+
+<div class='collapse-nav'>
+<a class="toggle-nav-collapse" href="#"><i class="fa fa-angle-left"></i></a>
+
+</div>
+</div>
+<div class='content-wrapper'>
+<div class='container-fluid'>
+<div class='content'>
+<div class='flash-container'>
+</div>
+
+<div class='clearfix'>
+<div class='tree-ref-holder'>
+<form accept-charset="UTF-8" action="/forforce-dev/Bellatrade/refs/switch" class="project-refs-form" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<select class="project-refs-select select2 select2-sm" id="ref" name="ref"><optgroup label="Branches"><option selected="selected" value="master">master</option></optgroup><optgroup label="Tags"></optgroup></select>
+<input id="destination" name="destination" type="hidden" value="blob" />
+<input id="path" name="path" type="hidden" value="web/icomoon/fonts/icomoon.svg" />
+</form>
+
+
+</div>
+<div class='tree-holder' id='tree-holder'>
+<ul class='breadcrumb repo-breadcrumb'>
+<li>
+<i class='fa fa-angle-right'></i>
+<a href="/forforce-dev/Bellatrade/tree/master">Bellatrade
+</a></li>
+<li>
+<a href="/forforce-dev/Bellatrade/tree/master/web">web</a>
+</li>
+<li>
+<a href="/forforce-dev/Bellatrade/tree/master/web/icomoon">icomoon</a>
+</li>
+<li>
+<a href="/forforce-dev/Bellatrade/tree/master/web/icomoon/fonts">fonts</a>
+</li>
+<li>
+<a href="/forforce-dev/Bellatrade/blob/master/web/icomoon/fonts/icomoon.svg"><strong>
+icomoon.svg
+</strong>
+</a></li>
+</ul>
+<ul class='blob-commit-info bs-callout bs-callout-info hidden-xs'>
+<li class='commit js-toggle-container'>
+<div class='commit-row-title'>
+<a class="commit_short_id" href="/forforce-dev/Bellatrade/commit/e88f2cfa95ed0dabdd1c5eccdd99d400fc2cae83">e88f2cfa</a>
+&nbsp;
+<span class='str-truncated'>
+<a class="commit-row-message" href="/forforce-dev/Bellatrade/commit/e88f2cfa95ed0dabdd1c5eccdd99d400fc2cae83">куча всего</a>
+</span>
+<a class="pull-right" href="/forforce-dev/Bellatrade/tree/e88f2cfa95ed0dabdd1c5eccdd99d400fc2cae83">Browse Code »</a>
+<div class='notes_count'>
+</div>
+</div>
+<div class='commit-row-info'>
+<a class="commit-author-link has_tooltip" data-original-title="vitaly.kuleshov@forforce.com" href="/u/v.kuleshov"><img alt="" class="avatar s16" src="https://git.forforce.com/uploads/user/avatar/15/_MG_2228.jpg" width="16" /> <span class="commit-author-name">Виталий Кулешов</span></a>
+<div class='committed_ago'>
+<time class='time_ago' data-placement='top' data-toggle='tooltip' datetime='2016-02-24T14:03:00Z' title='Feb 24, 2016 4:03pm'>2016-02-24 16:03:00 +0200</time>
+<script>$('.time_ago').timeago().tooltip()</script>
+ &nbsp;
+</div>
+</div>
+</li>
+
+</ul>
+<div class='tree-content-holder' id='tree-content-holder'>
+<article class='file-holder'>
+<div class='file-title clearfix'>
+<i class='fa fa-file'></i>
+<span class='file_name'>
+icomoon.svg
+<small>16.5 KB</small>
+</span>
+<span class='options hidden-xs'><div class='btn-group tree-btn-group'>
+<a class="btn btn-small" href="/forforce-dev/Bellatrade/edit/master/web/icomoon/fonts/icomoon.svg">Edit</a>
+<a class="btn btn-small" href="/forforce-dev/Bellatrade/raw/master/web/icomoon/fonts/icomoon.svg" target="_blank">Raw</a>
+<a class="btn btn-small" href="/forforce-dev/Bellatrade/blame/master/web/icomoon/fonts/icomoon.svg">Blame</a>
+<a class="btn btn-small" href="/forforce-dev/Bellatrade/commits/master/web/icomoon/fonts/icomoon.svg">History</a>
+<a class="btn btn-small" href="/forforce-dev/Bellatrade/blob/8d7c16dee5c3480899845612c934ef9fb653d352/web/icomoon/fonts/icomoon.svg">Permalink</a>
+</div>
+<button class="remove-blob btn btn-small btn-remove" data-target="#modal-remove-blob" data-toggle="modal" name="button" type="submit">Remove
+</button></span>
+</div>
+<div class='file-content code'>
+<div class='code dark file-content'>
+<div class='line-numbers'>
+<a href="#L1" id="L1" rel="#L1"><i class='fa fa-link'></i>
+1
+</a><a href="#L2" id="L2" rel="#L2"><i class='fa fa-link'></i>
+2
+</a><a href="#L3" id="L3" rel="#L3"><i class='fa fa-link'></i>
+3
+</a><a href="#L4" id="L4" rel="#L4"><i class='fa fa-link'></i>
+4
+</a><a href="#L5" id="L5" rel="#L5"><i class='fa fa-link'></i>
+5
+</a><a href="#L6" id="L6" rel="#L6"><i class='fa fa-link'></i>
+6
+</a><a href="#L7" id="L7" rel="#L7"><i class='fa fa-link'></i>
+7
+</a><a href="#L8" id="L8" rel="#L8"><i class='fa fa-link'></i>
+8
+</a><a href="#L9" id="L9" rel="#L9"><i class='fa fa-link'></i>
+9
+</a><a href="#L10" id="L10" rel="#L10"><i class='fa fa-link'></i>
+10
+</a><a href="#L11" id="L11" rel="#L11"><i class='fa fa-link'></i>
+11
+</a><a href="#L12" id="L12" rel="#L12"><i class='fa fa-link'></i>
+12
+</a><a href="#L13" id="L13" rel="#L13"><i class='fa fa-link'></i>
+13
+</a><a href="#L14" id="L14" rel="#L14"><i class='fa fa-link'></i>
+14
+</a><a href="#L15" id="L15" rel="#L15"><i class='fa fa-link'></i>
+15
+</a><a href="#L16" id="L16" rel="#L16"><i class='fa fa-link'></i>
+16
+</a><a href="#L17" id="L17" rel="#L17"><i class='fa fa-link'></i>
+17
+</a><a href="#L18" id="L18" rel="#L18"><i class='fa fa-link'></i>
+18
+</a><a href="#L19" id="L19" rel="#L19"><i class='fa fa-link'></i>
+19
+</a><a href="#L20" id="L20" rel="#L20"><i class='fa fa-link'></i>
+20
+</a><a href="#L21" id="L21" rel="#L21"><i class='fa fa-link'></i>
+21
+</a><a href="#L22" id="L22" rel="#L22"><i class='fa fa-link'></i>
+22
+</a><a href="#L23" id="L23" rel="#L23"><i class='fa fa-link'></i>
+23
+</a><a href="#L24" id="L24" rel="#L24"><i class='fa fa-link'></i>
+24
+</a><a href="#L25" id="L25" rel="#L25"><i class='fa fa-link'></i>
+25
+</a><a href="#L26" id="L26" rel="#L26"><i class='fa fa-link'></i>
+26
+</a><a href="#L27" id="L27" rel="#L27"><i class='fa fa-link'></i>
+27
+</a><a href="#L28" id="L28" rel="#L28"><i class='fa fa-link'></i>
+28
+</a><a href="#L29" id="L29" rel="#L29"><i class='fa fa-link'></i>
+29
+</a><a href="#L30" id="L30" rel="#L30"><i class='fa fa-link'></i>
+30
+</a><a href="#L31" id="L31" rel="#L31"><i class='fa fa-link'></i>
+31
+</a><a href="#L32" id="L32" rel="#L32"><i class='fa fa-link'></i>
+32
+</a><a href="#L33" id="L33" rel="#L33"><i class='fa fa-link'></i>
+33
+</a><a href="#L34" id="L34" rel="#L34"><i class='fa fa-link'></i>
+34
+</a><a href="#L35" id="L35" rel="#L35"><i class='fa fa-link'></i>
+35
+</a><a href="#L36" id="L36" rel="#L36"><i class='fa fa-link'></i>
+36
+</a><a href="#L37" id="L37" rel="#L37"><i class='fa fa-link'></i>
+37
+</a><a href="#L38" id="L38" rel="#L38"><i class='fa fa-link'></i>
+38
+</a><a href="#L39" id="L39" rel="#L39"><i class='fa fa-link'></i>
+39
+</a><a href="#L40" id="L40" rel="#L40"><i class='fa fa-link'></i>
+40
+</a><a href="#L41" id="L41" rel="#L41"><i class='fa fa-link'></i>
+41
+</a><a href="#L42" id="L42" rel="#L42"><i class='fa fa-link'></i>
+42
+</a></div>
+<pre class="code highlight"><code><span id="LC1" class="line"><span class="cp">&lt;?xml version=&quot;1.0&quot; standalone=&quot;no&quot;?&gt;</span></span>&#x000A;<span id="LC2" class="line"><span class="cp">&lt;!DOCTYPE svg PUBLIC &quot;-//W3C//DTD SVG 1.1//EN&quot; &quot;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&quot; &gt;</span></span>&#x000A;<span id="LC3" class="line"><span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span><span class="nt">&gt;</span></span>&#x000A;<span id="LC4" class="line"><span class="nt">&lt;metadata&gt;</span>Generated by IcoMoon<span class="nt">&lt;/metadata&gt;</span></span>&#x000A;<span id="LC5" class="line"><span class="nt">&lt;defs&gt;</span></span>&#x000A;<span id="LC6" class="line"><span class="nt">&lt;font</span> <span class="na">id=</span><span class="s">&quot;icomoon&quot;</span> <span class="na">horiz-adv-x=</span><span class="s">&quot;1024&quot;</span><span class="nt">&gt;</span></span>&#x000A;<span id="LC7" class="line"><span class="nt">&lt;font-face</span> <span class="na">units-per-em=</span><span class="s">&quot;1024&quot;</span> <span class="na">ascent=</span><span class="s">&quot;870.4&quot;</span> <span class="na">descent=</span><span class="s">&quot;-153.6&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC8" class="line"><span class="nt">&lt;missing-glyph</span> <span class="na">horiz-adv-x=</span><span class="s">&quot;1024&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC9" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#x20;&quot;</span> <span class="na">horiz-adv-x=</span><span class="s">&quot;512&quot;</span> <span class="na">d=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC10" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe900;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;dialog-round&quot;</span> <span class="na">d=</span><span class="s">&quot;M752 704h-480c-126.4 0-228.8-102.4-228.8-228.8v-27.2c0-126.4 102.4-228.8 228.8-228.8h198.4l206.4-155.2 32 156.8h43.2c126.4 0 228.8 102.4 228.8 228.8v27.2c0 124.8-102.4 227.2-228.8 227.2z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC11" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe901;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;lens&quot;</span> <span class="na">d=</span><span class="s">&quot;M876.8 107.2l-155.2 145.6c38.4 51.2 60.8 113.6 60.8 182.4 0 3.2 0 6.4-1.6 9.6 0 3.2 1.6 6.4 1.6 9.6 0 172.8-142.4 313.6-318.4 313.6-3.2 0-6.4 0-9.6-1.6-1.6 1.6-4.8 1.6-8 1.6-176 0-318.4-140.8-318.4-312 0-3.2 0-6.4 1.6-9.6-1.6-4.8-1.6-8-1.6-11.2 0-172.8 142.4-312 318.4-312 3.2 0 6.4 0 9.6 1.6 3.2 0 6.4-1.6 9.6-1.6 59.2 0 115.2 16 163.2 44.8l160-148.8c9.6-12.8 27.2-19.2 43.2-19.2s33.6 6.4 44.8 19.2c25.6 24 25.6 64 0 88zM456 248c-3.2 0-6.4 1.6-9.6 1.6-104 0-190.4 83.2-190.4 185.6 0 3.2 0 6.4-1.6 9.6 0 3.2 1.6 6.4 1.6 9.6 0 102.4 84.8 185.6 190.4 185.6 3.2 0 6.4 0 9.6 1.6 3.2 0 6.4-1.6 9.6-1.6 104 0 190.4-83.2 190.4-185.6 0-3.2 0-6.4 1.6-9.6 0-3.2-1.6-6.4-1.6-9.6 0-102.4-84.8-185.6-190.4-185.6-4.8 0-8-1.6-9.6-1.6z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC12" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe902;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;close&quot;</span> <span class="na">d=</span><span class="s">&quot;M833.6 16c-20.8-20.8-54.4-20.8-73.6 0l-212.8 211.2c-20.8 20.8-54.4 20.8-73.6 0l-211.2-209.6c-20.8-20.8-54.4-20.8-73.6 0l-44.8 44.8c-20.8 20.8-20.8 54.4 0 73.6l209.6 209.6c20.8 20.8 20.8 54.4 0 73.6l-209.6 212.8c-20.8 20.8-20.8 54.4 0 73.6l46.4 46.4c20.8 20.8 54.4 20.8 73.6 0l209.6-209.6c20.8-20.8 54.4-20.8 73.6 0l211.2 209.6c20.8 20.8 54.4 20.8 73.6 0l44.8-44.8c20.8-20.8 20.8-54.4 0-73.6l-208-211.2c-20.8-20.8-20.8-54.4 0-73.6l211.2-212.8c20.8-20.8 20.8-54.4 0-73.6l-46.4-46.4z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC13" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe903;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;man&quot;</span> <span class="na">d=</span><span class="s">&quot;M830.4 142.4c-19.2 118.4-115.2 208-225.6 241.6 48 52.8 73.6 140.8 73.6 200-1.6 89.6-75.2 184-168 184-94.4 0-168-94.4-168-185.6 0-59.2 25.6-147.2 73.6-200-110.4-33.6-206.4-123.2-224-240-8-48 48-81.6 84.8-97.6 70.4-32 152-43.2 228.8-44.8 78.4 0 160 9.6 232 40 38.4 17.6 100.8 49.6 92.8 102.4z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC14" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe904;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;cart&quot;</span> <span class="na">d=</span><span class="s">&quot;M985.6 480h-233.6l-163.2 278.4c-6.4 9.6-28.8 12.8-38.4 6.4s-12.8-19.2-6.4-28.8l147.2-256h-344l147.2 256c6.4 9.6 3.2 22.4-6.4 28.8s-33.6 3.2-40-6.4l-163.2-278.4h-232c-12.8 0-20.8-9.6-20.8-22.4 0-11.2 9.6-20.8 20.8-20.8h25.6l56-172.8c0 0 0 0 0 0l49.6-185.6c12.8-46.4 56-78.4 102.4-78.4h464c48 0 89.6 32 102.4 78.4l49.6 185.6c0 0 0 0 0 0l57.6 172.8h25.6c11.2 0 20.8 9.6 20.8 20.8 1.6 12.8-8 22.4-20.8 22.4z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC15" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe905;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;scales-strike&quot;</span> <span class="na">d=</span><span class="s">&quot;M302.4 582.4h332.8l57.6 94.4h-134.4v91.2h-89.6v-92.8h-190.4l-206.4-478.4c0 0 44.8-168 209.6-168 6.4 0 11.2 0 17.6 1.6l152 249.6-148.8 302.4zM172.8 262.4l105.6 228.8 107.2-228.8h-212.8zM798.4 552l67.2 108.8-68.8 41.6-440-724.8 68.8-38.4 128 209.6c27.2-49.6 83.2-120 188.8-120 163.2 0 209.6 168 209.6 168l-153.6 355.2zM640 262.4l56 120 56 92.8 92.8-212.8h-204.8z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC16" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe906;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;scales&quot;</span> <span class="na">d=</span><span class="s">&quot;M745.6 675.2h-188.8v92.8h-89.6v-92.8h-188.8l-206.4-481.6c0 0 44.8-169.6 209.6-169.6s209.6 169.6 209.6 169.6l-188.8 387.2h420.8l-190.4-387.2c0 0 44.8-169.6 209.6-169.6 163.2 0 209.6 169.6 209.6 169.6l-206.4 481.6zM385.6 259.2h-212.8l105.6 230.4 107.2-230.4zM640 259.2l105.6 230.4 99.2-230.4h-204.8z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC17" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe907;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;heart-strike&quot;</span> <span class="na">d=</span><span class="s">&quot;M827.2 628.8c-14.4 11.2-35.2 22.4-59.2 30.4l73.6 121.6-76.8 54.4-512-854.4 78.4-48 89.6 150.4 9.6-11.2c22.4-22.4 51.2-33.6 80-32 28.8 0 57.6 9.6 80 32l236.8 259.2c81.6 81.6 81.6 216 0 297.6zM540.8 635.2c-3.2-1.6-6.4-3.2-8-6.4l-20.8-20.8-20.8 20.8c-81.6 81.6-212.8 81.6-294.4 0s-81.6-214.4 0-297.6l97.6-108.8 246.4 412.8z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC18" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe908;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;heart&quot;</span> <span class="na">d=</span><span class="s">&quot;M827.2 627.2c-81.6 81.6-212.8 81.6-294.4 0l-20.8-20.8-20.8 20.8c-81.6 81.6-212.8 81.6-294.4 0s-81.6-212.8 0-294.4l235.2-259.2c22.4-22.4 51.2-32 80-32 0 0 0 0 0 0s0 0 0 0c28.8 0 57.6 9.6 80 32l233.6 257.6c83.2 81.6 83.2 214.4 1.6 296z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC19" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe909;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;dialog-quad&quot;</span> <span class="na">d=</span><span class="s">&quot;M833.6 768h-643.2c-48 0-86.4-40-86.4-88v-414.4c0-48 38.4-86.4 86.4-86.4h273.6l179.2-163.2c11.2-20.8 32-20.8 43.2 0v164.8h145.6c48 0 86.4 40 86.4 86.4v412.8c1.6 48-36.8 88-84.8 88z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC20" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe90a;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;certification&quot;</span> <span class="na">d=</span><span class="s">&quot;M512 649.6c-88 0-158.4-70.4-158.4-158.4 0-86.4 70.4-158.4 158.4-158.4s158.4 70.4 158.4 158.4c0 88-70.4 158.4-158.4 158.4zM771.2 596.8v0 0c-14.4 33.6-35.2 64-60.8 89.6v0 0c-25.6 25.6-56 46.4-91.2 60.8v0 0c-33.6 12.8-68.8 20.8-107.2 20.8s-73.6-8-107.2-20.8v0 0c-33.6-14.4-65.6-35.2-91.2-60.8v0 0c-25.6-25.6-46.4-56-60.8-89.6v0 0c-14.4-33.6-20.8-68.8-20.8-107.2s8-73.6 20.8-107.2v0 0c14.4-33.6 35.2-64 60.8-89.6v0 0c16-16 35.2-30.4 54.4-41.6l-70.4-201.6 105.6 76.8 36.8-126.4 72 206.4 72-206.4 36.8 126.4 105.6-76.8-70.4 201.6c19.2 11.2 38.4 25.6 54.4 41.6v0 0c25.6 25.6 46.4 56 60.8 89.6v0 0c14.4 33.6 20.8 68.8 20.8 107.2s-8 73.6-20.8 107.2zM512 286.4c-113.6 0-206.4 92.8-206.4 206.4s92.8 204.8 206.4 204.8c113.6 0 206.4-92.8 206.4-204.8 0-113.6-92.8-206.4-206.4-206.4z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC21" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe90b;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;wallet&quot;</span> <span class="na">d=</span><span class="s">&quot;M756.8 64h-489.6c-51.2 0-91.2 41.6-91.2 92.8v454.4c0 51.2 41.6 92.8 91.2 92.8h400c51.2 0 91.2-38.4 91.2-91.2h-480c-6.4 0-11.2-4.8-11.2-11.2v-24c0-6.4 4.8-11.2 11.2-11.2h484.8c48-3.2 86.4-43.2 86.4-92.8v-316.8c-1.6-51.2-43.2-92.8-92.8-92.8zM758.4 331.2c0 19.2-16 35.2-35.2 35.2h-19.2c-19.2 0-35.2-16-35.2-35.2v-32c0-19.2 16-35.2 35.2-35.2h20.8c19.2 0 35.2 16 35.2 35.2v32z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC22" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe90c;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;pencil&quot;</span> <span class="na">d=</span><span class="s">&quot;M706.916 372.419l188.8 188.8c0 0 11.2 59.2-67.2 139.2s-139.2 67.2-139.2 67.2l-505.6-505.6-56-262.4 260.8 56 318.4 316.8zM278.116 78.019c-8 16-11.2 20.8-30.4 40s-20.8 20.8-36.8 30.4l48 108.8c0 0 32 14.4 86.4-41.6 54.4-54.4 49.6-83.2 49.6-83.2l-116.8-54.4z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC23" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe90d;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;arrow-right-rounded&quot;</span> <span class="na">d=</span><span class="s">&quot;M726.011 459.229l-12.8 11.2-1.6 1.6c-3.2 3.2-6.4 4.8-9.6 8l-318.4 270.4c-24 24-64 22.4-86.4-1.6l-8-8c-24-24-22.4-64 1.6-86.4l220.8-267.2-220.8-276.8c-22.4-25.6-20.8-64 4.8-86.4l9.6-8c25.6-22.4 64-20.8 86.4 4.8l321.6 302.4c1.6 1.6 3.2 1.6 3.2 3.2l11.2 12.8c33.6 33.6 32 86.4-1.6 120z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC24" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe90e;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;arrow-left-rounded&quot;</span> <span class="na">d=</span><span class="s">&quot;M297.996 459.236l12.8 11.2 1.6 1.6c3.2 3.2 6.4 4.8 9.6 8l318.4 270.4c24 24 64 22.4 86.4-1.6l8-8c24-24 22.4-64-1.6-86.4l-220.8-267.2 220.8-276.8c22.4-25.6 20.8-64-4.8-86.4l-9.6-8c-25.6-22.4-64-20.8-86.4 4.8l-321.6 302.4c-1.6 1.6-3.2 1.6-3.2 3.2l-11.2 12.8c-33.6 33.6-32 86.4 1.6 120z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC25" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe90f;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;arrow-up-rounded&quot;</span> <span class="na">d=</span><span class="s">&quot;M587.229 597.997l11.2-12.8 1.6-1.6c3.2-3.2 4.8-6.4 8-9.6l270.4-318.4c24-24 22.4-64-1.6-86.4l-8-8c-24-24-64-22.4-86.4 1.6l-267.2 220.8-276.8-220.8c-25.6-22.4-64-20.8-86.4 4.8l-8 9.6c-22.4 25.6-20.8 64 4.8 86.4l302.4 321.6c1.6 1.6 1.6 3.2 3.2 3.2l12.8 11.2c33.6 33.6 86.4 32 120-1.6z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC26" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe910;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;arrow-down-rounded&quot;</span> <span class="na">d=</span><span class="s">&quot;M587.236 169.996l11.2 12.8 1.6 1.6c3.2 3.2 4.8 6.4 8 9.6l270.4 318.4c24 24 22.4 64-1.6 86.4l-8 8c-24 24-64 22.4-86.4-1.6l-267.2-220.8-276.8 220.8c-25.6 22.4-64 20.8-86.4-4.8l-8-9.6c-22.4-25.6-20.8-64 4.8-86.4l302.4-321.6c1.6-1.6 1.6-3.2 3.2-3.2l12.8-11.2c33.6-33.6 86.4-32 120 1.6z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC27" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe911;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;phone&quot;</span> <span class="na">d=</span><span class="s">&quot;M527.342 205.398c-30.4 32-64 88-81.6 152 0 0 0 0 0 0 0 3.2-1.6 4.8-1.6 8s-1.6 4.8-1.6 8v0c-16 64-14.4 129.6-3.2 172.8 33.6 9.6 107.2 36.8 107.2 36.8l6.4 185.6h-99.2c-72-19.2-217.6-137.6-145.6-438.4v0c0-3.2 1.6-4.8 1.6-8s1.6-4.8 1.6-8v0c84.8-296 270.4-329.6 342.4-310.4l81.6 64-99.2 156.8c1.6 1.6-75.2-11.2-108.8-19.2z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC28" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe912;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;arrow-left-cornered&quot;</span> <span class="na">d=</span><span class="s">&quot;M544 0h216l-280 390.4 280 377.6h-216l-280-377.6 280-390.4z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC29" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe913;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;star-filled&quot;</span> <span class="na">d=</span><span class="s">&quot;M320 9.6c-46.4-24-75.2-1.6-67.2 49.6l36.8 216-155.2 152c-36.8 36.8-25.6 72 25.6 80l214.4 32 96 195.2c22.4 46.4 59.2 46.4 83.2 0l96-195.2 214.4-32c51.2-8 62.4-43.2 25.6-80l-155.2-152 36.8-216c8-51.2-20.8-73.6-67.2-49.6l-192 102.4-192-102.4z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC30" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe914;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;star-empty&quot;</span> <span class="na">d=</span><span class="s">&quot;M512 646.4l70.4-142.4 17.6-35.2 40-6.4 156.8-22.4-113.6-110.4-28.8-27.2 6.4-40 27.2-156.8-139.2 73.6-36.8 17.6-35.2-19.2-139.2-73.6 27.2 156.8 6.4 40-28.8 27.2-113.6 110.4 156.8 22.4 40 6.4 17.6 35.2 68.8 144zM512 768c-14.4 0-30.4-11.2-41.6-35.2l-96-195.2-214.4-32c-51.2-8-62.4-43.2-25.6-80l155.2-152-36.8-216c-6.4-36.8 8-59.2 33.6-59.2 9.6 0 20.8 3.2 33.6 9.6l192 104 192-102.4c12.8-6.4 24-9.6 33.6-9.6 25.6 0 40 22.4 33.6 59.2l-36.8 216 155.2 152c36.8 36.8 25.6 72-25.6 80l-214.4 32-96 195.2c-11.2 22.4-27.2 33.6-41.6 33.6v0z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC31" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe915;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;plus&quot;</span> <span class="na">d=</span><span class="s">&quot;M128 448h768v-128h-768v128zM448 768h128v-768h-128v768z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC32" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe916;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;minus&quot;</span> <span class="na">d=</span><span class="s">&quot;M128 447.993h768v-128h-768v128z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC33" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe917;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;vkontakte&quot;</span> <span class="na">d=</span><span class="s">&quot;M851.262 235.938c0-38.19-7.219-71.732-21.673-100.632-14.449-28.901-33.892-52.817-58.314-71.73-28.902-22.707-60.639-39.181-95.213-48.809-34.578-9.636-78.532-14.746-131.853-14.746h-307.477v767.958h271.351c56.418 0 99.162-1.626 128.242-5.923 29.070-4.305 56.334-13.074 81.796-26.828 27.522-14.796 48.078-34.446 61.673-59.214 13.586-24.774 20.382-53.264 20.382-85.601 0-37.506-8.73-70.843-27.474-100.084-18.754-29.248-44.106-50.718-77.020-64.476v-4.129c45.714-9.983 84.842-30.366 113.403-61.154 28.553-30.798 42.184-72.341 42.184-124.633zM604.069 551.768c0 12.387-3.185 25.11-9.546 38.19-6.366 13.074-16.256 22.53-29.671 28.385-12.732 5.499-27.786 8.034-45.154 8.55-17.379 0.518-43.268 0.294-77.669 0.294h-13.305v-162.735h24.143c33.030 0 56.163 0.906 69.41 1.602 13.242 0.686 26.918 4.579 41.027 11.119 15.485 7.224 26.142 17.339 31.998 30.073 5.844 12.726 8.768 27.666 8.768 44.526zM652.581 239.551c0 23.741-4.821 42.318-14.449 55.734-9.639 13.418-24.090 23.562-43.35 30.447-11.698 4.47-27.785 6.372-48.252 6.89-20.474 0.515-47.91 0.179-82.312 0.179h-35.499v-191.99h10.209c50.226 0 84.974 0.681 104.246 1.375 19.264 0.686 38.874 5.502 58.83 14.106 17.55 7.564 30.36 18.746 38.447 33.371 8.079 14.622 12.127 31.307 12.127 49.888z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC34" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe918;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;facebook&quot;</span> <span class="na">d=</span><span class="s">&quot;M576.604-31.986v379.955h127.579l19.030 146.583h-146.611v95.738c0 42.733 12.401 71.847 73.676 71.847l78.695 0.036v132.002c-13.5 1.794-61.387 5.817-115.361 5.817-112.682 0-191.303-68.777-191.303-195.092v-110.348h-127.293v-146.583h127.293v-379.955h154.298z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC35" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe919;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;twitter&quot;</span> <span class="na">d=</span><span class="s">&quot;M887.904 577.462c38.434 26.911 70.54 60.443 96.75 100.396-37.483-17.107-74.723-27.406-111.455-30.607 41.632 23.78 70.297 59.272 85.721 106.506-39.186-22.774-80.309-38.453-123.682-46.538-38.436 40.918-85.209 61.245-140.804 61.245-53.893 0-99.645-19.098-137.641-57.075-37.956-37.924-57.056-83.763-57.056-137.587 0-16.427 1.734-31.133 4.9-44.137-77.65 4.187-151.085 23.78-220.874 59.272-69.791 35.558-129.81 83.526-179.515 144.004-17.157-29.347-25.705-61.909-25.705-97.963 0-69.26 28.902-123.12 86.913-161.57-31.083 0.699-60.46 8.986-88.138 24.46v-2.433c-0.715-45.806 13.479-86.488 42.862-122.438 29.344-36.020 66.86-58.319 112.649-67.338-17.157-4.936-34.284-7.389-51.441-7.389-12.257 0-24.51 1.261-36.699 3.677 12.935-39.151 36.224-71.254 69.789-96.243 33.569-24.716 70.505-37.719 111.39-38.436-71.016-55.593-151.326-83.27-241.198-83.27-10.587 0-25.705 0.714-45.314 2.449 90.591-58.044 189.83-86.913 297.543-86.913 112.651 0 213.522 28.665 302.448 86.165 88.888 57.568 155.987 137.843 200.787 240.758 32.579 75.902 48.993 151.087 48.993 225.284 0.002 11.523-0.511 20.068-1.226 25.719z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC36" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe91a;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;odnoklassniki&quot;</span> <span class="na">d=</span><span class="s">&quot;M545.354 668.581v0c-46.359 16.633-97.45-7.446-114.082-53.813-16.656-46.377 7.415-97.459 53.753-114.113 46.4-16.656 97.491 7.424 114.124 53.803 16.672 46.368-7.416 97.459-53.796 114.124zM646.205 348.549c13.071 7.714 27.492 15.281 42.794 16.009 15.837 0.737 36.691-8.060 47.118-19.665 22.288-24.737 23.763-65.237-1.189-88.507-3.912-3.606-8.849-7.324-13.767-10.419-44.76-25.976-70.307-38.46-121.274-49.267 6.719-5.531 13.522-12.187 19.318-17.863 34.131-34.334 68.893-68.033 103.044-102.367 22.288-22.678 23.146-54.779 6.596-80.693-17.781-27.862-54.203-34.537-82.556-18.335-7.538 4.322-14.278 10.12-21.937 17.637-36.526 36.691-73.092 73.482-110.272 109.474-5.018-4.774-13.233-13.214-19.623-19.584-32.818-32.428-64.694-65.838-97.779-98.043-27.059-27.246-67.087-24.212-93.021 3.667-19.298 20.793-21.612 54.203-3.912 77.148 9.812 12.168 21.2 22.983 32.405 33.903 25.446 25.75 68.035 66.067 91.019 92.624-41.485 13.776-91.816 29.848-126.498 55.568-29.559 21.909-33.452 59.182-13.539 88.692 7.54 11.153 18.273 19.174 35.132 23.23 19.011 4.569 37.614 0.305 54.081-9.219 49.451-28.589 92.8-43.122 158.309-38.811 40.274 3.88 80.528 14.143 115.557 34.814v0zM587.984 787.244c111.911-40.191 170.048-163.505 129.859-275.426-40.173-111.911-163.495-170.048-275.406-129.857-111.933 40.202-170.092 163.526-129.877 275.437 40.189 111.923 163.514 170.048 275.425 129.848v0z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC37" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe91b;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;broom&quot;</span> <span class="na">d=</span><span class="s">&quot;M681.368 635.072c8-11.2 22.4-22.4 36.8-32s28.8-22.4 41.6-25.6l70.4 96c16 3.2 43.2 11.2 52.8 25.6 24 33.6 12.8 89.6-12.8 107.2s-80 6.4-104-27.2c-9.6-14.4-9.6-36.8-8-54.4l-76.8-89.6zM850.968 779.072c17.6-12.8 17.6-41.6 1.6-64-3.2-4.8-6.4-8-9.6-11.2 0 0-12.8-4.8-36.8 12.8-22.4 17.6-22.4 30.4-22.4 30.4 1.6 4.8 4.8 8 6.4 12.8 16 22.4 43.2 32 60.8 19.2zM534.168 345.472c59.2-43.2 116.8-73.6 166.4-92.8 28.8 86.4 48 156.8 59.2 211.2 6.4 32 4.8 62.4-8 91.2-11.2 3.2-24 8-36.8 16-4.8 3.2-9.6 6.4-14.4 9.6s-8 6.4-12.8 9.6c-11.2 9.6-20.8 19.2-28.8 30.4-30.4 3.2-59.2-4.8-86.4-20.8-48-27.2-110.4-67.2-182.4-121.6 35.2-43.2 83.2-89.6 144-132.8zM481.368 271.872c48-35.2 96-62.4 137.6-81.6 19.2-8 38.4-14.4 56-19.2 4.8 16 11.2 32 16 48-56 20.8-116.8 54.4-177.6 97.6-62.4 44.8-113.6 92.8-152 140.8-12.8-9.6-27.2-20.8-41.6-30.4 4.8-6.4 9.6-14.4 14.4-20.8 36.8-43.2 86.4-89.6 147.2-134.4zM462.168 244.672c-72 51.2-168 161.6-168 161.6l-166.4-105.6h1.6c0-1.6 0-4.8 4.8-11.2s9.6-8 12.8-8c9.6-1.6 17.6-6.4 25.6-16s11.2-19.2 9.6-25.6v0c0-1.6 0-4.8 6.4-11.2s11.2-8 12.8-8c9.6 0 17.6-4.8 25.6-14.4 9.6-9.6 12.8-19.2 11.2-25.6v0c0-1.6 1.6-4.8 6.4-11.2 6.4-6.4 11.2-6.4 12.8-6.4 9.6 0 17.6-3.2 27.2-11.2s14.4-17.6 14.4-25.6v0c0-1.6 1.6-4.8 8-9.6s11.2-6.4 12.8-4.8c8 1.6 17.6-1.6 27.2-9.6s16-16 16-24v-1.6c0-1.6 1.6-4.8 8-9.6 8-4.8 11.2-4.8 12.8-4.8 8 1.6 17.6 0 27.2-6.4 11.2-6.4 17.6-16 19.2-24v0c0-1.6 3.2-4.8 9.6-8 8-4.8 11.2-3.2 12.8-3.2 8 3.2 16 1.6 27.2-4.8s19.2-14.4 20.8-22.4v0c0-1.6 3.2-4.8 9.6-8 8-3.2 12.8-3.2 12.8-1.6 8 3.2 16 3.2 27.2-1.6s19.2-12.8 22.4-20.8v0c0-1.6 11.2-8 11.2-8l83.2 185.6c-3.2-1.6-136 54.4-204.8 105.6z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC38" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe91c;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;grid&quot;</span> <span class="na">d=</span><span class="s">&quot;M128 201.6h200v-201.6h-200v201.6zM411.2 201.6h200v-201.6h-200v201.6zM696 201.6h200v-201.6h-200v201.6zM128 484.8h200v-201.6h-200v201.6zM411.2 484.8h200v-201.6h-200v201.6zM696 484.8h200v-201.6h-200v201.6zM128 768h200v-201.6h-200v201.6zM411.2 768h200v-201.6h-200v201.6zM696 768h200v-201.6h-200v201.6z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC39" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe91d;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;list&quot;</span> <span class="na">d=</span><span class="s">&quot;M81.6 735.999h155.2v-150.4h-155.2v150.4zM355.2 735.999h587.2v-153.6h-587.2v153.6zM81.6 463.999h155.2v-156.8h-155.2v156.8zM355.2 463.999h587.2v-156.8h-587.2v156.8zM81.6 187.199h155.2v-153.6h-155.2v153.6zM355.2 187.199h587.2v-155.2h-587.2v155.2z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC40" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe91e;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;quote-close&quot;</span> <span class="na">d=</span><span class="s">&quot;M62.4 422.4c35.2-36.8 72-54.4 115.2-54.4-4.8-41.6-20.8-81.6-49.6-116.8-28.8-36.8-64-64-107.2-80l99.2-171.2c28.8 11.2 64 27.2 104 48 40 22.4 78.4 52.8 115.2 91.2s67.2 88 94.4 145.6c25.6 59.2 38.4 129.6 38.4 212.8 0 81.6-22.4 147.2-65.6 195.2-44.8 51.2-105.6 75.2-182.4 75.2-60.8 0-112-17.6-152-54.4s-60.8-84.8-60.8-145.6c0-60.8 16-110.4 51.2-145.6zM604.8 422.4c35.2-36.8 72-54.4 115.2-54.4-4.8-41.6-20.8-81.6-49.6-116.8-28.8-36.8-64-64-107.2-80l99.2-171.2c28.8 11.2 64 27.2 104 48 40 22.4 78.4 52.8 115.2 91.2s67.2 88 94.4 145.6c25.6 59.2 38.4 129.6 38.4 212.8 0 81.6-22.4 147.2-65.6 195.2-44.8 51.2-105.6 75.2-182.4 75.2-60.8 0-112-17.6-152-54.4s-60.8-84.8-60.8-145.6c-1.6-60.8 16-110.4 51.2-145.6z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC41" class="line"><span class="nt">&lt;glyph</span> <span class="na">unicode=</span><span class="s">&quot;&amp;#xe91f;&quot;</span> <span class="na">glyph-name=</span><span class="s">&quot;quote-open&quot;</span> <span class="na">d=</span><span class="s">&quot;M961.6 345.6c-35.2 36.8-72 54.4-115.2 54.4 4.8 41.6 20.8 81.6 49.6 116.8 28.8 36.8 64 64 107.2 80l-99.2 171.2c-28.8-11.2-64-27.2-104-48-40-22.4-78.4-52.8-115.2-91.2s-67.2-88-94.4-145.6c-25.6-59.2-38.4-129.6-38.4-212.8 0-81.6 22.4-147.2 65.6-195.2 44.8-51.2 105.6-75.2 182.4-75.2 60.8 0 112 17.6 152 54.4s60.8 84.8 60.8 145.6c0 60.8-16 110.4-51.2 145.6zM419.2 345.6c-35.2 36.8-72 54.4-115.2 54.4 4.8 41.6 20.8 81.6 49.6 116.8 28.8 36.8 64 64 107.2 80l-99.2 171.2c-28.8-11.2-64-27.2-104-48-40-22.4-78.4-52.8-115.2-91.2s-67.2-88-94.4-145.6c-25.6-59.2-38.4-129.6-38.4-212.8 0-81.6 22.4-147.2 65.6-195.2 43.2-49.6 104-73.6 182.4-73.6 60.8 0 112 17.6 152 54.4s60.8 84.8 60.8 145.6c1.6 59.2-16 108.8-51.2 144z&quot;</span> <span class="nt">/&gt;</span></span>&#x000A;<span id="LC42" class="line"><span class="nt">&lt;/font&gt;&lt;/defs&gt;&lt;/svg&gt;</span></span></code></pre>&#x000A;
+</div>
+
+</div>
+
+</article>
+</div>
+
+</div>
+<div class='modal hide' id='modal-remove-blob'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header'>
+<a class='close' data-dismiss='modal' href='#'>×</a>
+<h3 class='page-title'>Remove icomoon.svg</h3>
+<p class='light'>
+From branch
+<strong>master</strong>
+</p>
+</div>
+<div class='modal-body'>
+<form accept-charset="UTF-8" action="/forforce-dev/Bellatrade/blob/master/web/icomoon/fonts/icomoon.svg" class="form-horizontal" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="delete" /><input name="authenticity_token" type="hidden" value="G4Jz4h0z7bZsJetSYm2UaoEYE6H6ZYgKzdFxIuyCVJ0=" /></div>
+<div class='form-group commit_message-group'>
+<label class="control-label" for="commit_message">Commit message
+</label><div class='col-sm-10'>
+<div class='commit-message-container'>
+<div class='max-width-marker'></div>
+<textarea class="form-control" id="commit_message" name="commit_message" placeholder="Removed this file because..." required="required" rows="3">
+</textarea>
+</div>
+</div>
+</div>
+
+<div class='form-group'>
+<div class='col-sm-2'></div>
+<div class='col-sm-10'>
+<button class="btn btn-remove btn-remove-file" name="button" type="submit">Remove file</button>
+<a class="btn btn-cancel" data-dismiss="modal" href="#">Cancel</a>
+</div>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<script>
+  disableButtonIfEmptyField('#commit_message', '.btn-remove-file')
+</script>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+  (function() {
+    $('.page-sidebar-collapsed .nav-sidebar a').tooltip({
+      placement: "right"
+    });
+  
+  }).call(this);
+</script>
+
+</body>
+</html>
