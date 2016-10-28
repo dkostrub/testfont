@@ -1,17 +1,3 @@
-<?php
-//if(isset($_POST['update'])) {
-//    if (isset($_SERVER['HTTPS']) and 'on' === $_SERVER['HTTPS']) {
-//        $location = 'https://';
-//    } else {
-//        $location = 'http://';
-//    }
-//    $location .= $_SERVER['SERVER_NAME'] . '/';
-//    $location .= dirname($_SERVER['REQUEST_URI']) . '/';
-//    header('Location: ' . $location);
-//    exit();
-//}
-?>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -42,7 +28,7 @@
         $font_url = $font;
 
         echo <<<HTML
-<style>
+    <style>
         @font-face {
             font-weight: normal;
             font-style: normal;
@@ -63,6 +49,9 @@ HTML;
 <div class="container">
     <?php
     if(isset($_POST['update'])){
+        if (isset($err)){
+            header ("location: {$_SERVER['REQUEST_URI']} ");
+        }
         if(isset($_FILES)){
             foreach ($_FILES['filename']['name'] as $k=>$v){
                 $uploaddir = 'fonts/';
@@ -85,7 +74,7 @@ HTML;
                         echo "Файл не загружен, вернитесь и попробуйте еще раз.";
                     }
                 }else{
-                    echo "<div class='err'>Ошибка загрузки файла!\n</div>";
+                    $err = "Ошибка загрузки файла!";
                     include "load.php";
                 }
             }
