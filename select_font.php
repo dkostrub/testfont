@@ -1,3 +1,7 @@
+<?php
+$res = createFont($_FILES['filename']['name'][$k]);
+$filename = $res['filename'];
+?>
 <div class="row">
     <div class="col-md-12">
         <form action="" method="post" enctype="multipart/form-data" class="font-form">
@@ -10,7 +14,8 @@
                             sort($result, SORT_NATURAL | SORT_FLAG_CASE);
                             foreach ($result as $file) {
                                 $selected = '';
-                                if ($_POST['font-form'] == $file) $selected = 'selected';
+                                if ($filename == $file) $selected = 'selected';
+                                if($_POST['font-form'] == $file) $selected = 'selected';
                                 echo "<option value=\"" . $file . "\" " . $selected . ">" . $file . "</option>";
                             }
                             ?>
@@ -25,9 +30,7 @@
                         <select name="weight-form" id="weight">
                             <?php
                             for ($i = 100; $i <=900; $i+=100) {
-                                $selected = '';
-                                if ($_POST['weight-form'] == $i) $selected = 'selected';
-                                echo "<option value=\"" . $i . "\" " . $selected . ">" . $i . "</option>";
+                                echo "<option value=" . $i . ">" . $i . "</option>";
                             }
                             ?>
                         </select>
@@ -42,10 +45,13 @@
                     </div>
                 </div>
             </fieldset>
-            <input type="submit" value="Применить стили" name="submit" class="add add-upd"/>
+            <input type="submit" value="Добавить блок" name="submit" class="add add-upd"/>
         </form>
         <div class="add add-font">
-            <a href="">Добавить новый шрифт</a>
+            <a href="">Загрузить новый шрифт</a>
+        </div>
+        <div class="add add-text">
+            <span>Добавляем блок</span>
         </div>
     </div>
 </div>

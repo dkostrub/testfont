@@ -1,3 +1,6 @@
+<?php
+require_once "lib/lib.inc.php";
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -11,38 +14,21 @@
     <link rel="stylesheet" type="text/css" href="css/font.css" />
 
     <?php
-    function multiexplode ($delimiters,$string) {
-        $ready = str_replace($delimiters, $delimiters[0], $string);
-        $launch = explode($delimiters[0], $ready);
-        return  $launch;
+    echo <<<HTML
+<style>
+    @font-face {
+        font-weight: normal;
+        font-style: normal;
+        font-family: $fontfamely;
+        src: local('$fontfamely');
+        src: url('fonts/$font_url.eot');
+        src: url('fonts/$font_url.eot#iefix') format('embedded-opentype'),
+        url('fonts/$font_url.woff') format('woff'),
+        url('fonts/$font_url.ttf') format('truetype'),
+        url('fonts/$font_url.svg') format('svg');
     }
-
-    if(isset($_POST['submit'])){
-        $font = $_POST['font-form'];
-        $size = $_POST['size-form'];
-        $weight = $_POST['weight-form'];
-        $style = $_POST['style-form'];
-
-        $exploded = multiexplode(array(",",".","-","_"," "),$font);
-        $fontfamely = $exploded[0];
-        $font_url = $font;
-
-        echo <<<HTML
-    <style>
-        @font-face {
-            font-weight: normal;
-            font-style: normal;
-            font-family: $fontfamely;
-			src: local('$fontfamely');
-            src: url('fonts/$font_url.eot');
-            src: url('fonts/$font_url.eot#iefix') format('embedded-opentype'),
-            url('fons/$font_url.woff') format('woff'),
-            url('fonts/$font_url.ttf') format('truetype'),
-            url('fonts/$font_url.svg') format('svg');
-        }
-    </style>
+</style>
 HTML;
-    }
     ?>
 </head>
 <body>
@@ -51,6 +37,7 @@ HTML;
     if(isset($_POST['update'])){
         if (isset($err)){
             header ("location: {$_SERVER['REQUEST_URI']} ");
+            exit;
         }
         if(isset($_FILES)){
             foreach ($_FILES['filename']['name'] as $k=>$v){
@@ -67,6 +54,7 @@ HTML;
                         if(preg_match("/$item\$/i", $_FILES['filename']['name'][$k])) exit;
                     }
                     if(is_uploaded_file($_FILES["filename"]["tmp_name"][$k])){
+//                        createFont($_FILES['filename']['name'][$k]);
                         move_uploaded_file($_FILES['filename']['tmp_name'][$k], $uploadfile);
                         require_once 'font_test.php';
                     }else{
@@ -91,6 +79,10 @@ HTML;
 
 <svg style="display:none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 </svg>
+<?php
 
+?>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
