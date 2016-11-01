@@ -264,6 +264,13 @@ BODY {
   z-index: 999;
 }
 .add {
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 0;
+  outline: none;
+  font-size: 1em;
+  user-select: none;
+  position: relative;
   font-family: "PT Sans", sans-serif, Arial;
   line-height: 1.4;
   cursor: pointer;
@@ -286,26 +293,23 @@ BODY {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#576270', endColorstr='#748295');
 }
 .add.add-send {
-  font-size: 1em;
   float: right;
-  position: relative;
-  top: 15px;
+  margin-top: 16px;
   right: 15px;
 }
 .add.add-font {
-  font-size: 1em;
-  position: relative;
-  bottom: 55px;
   left: 26px;
+  margin-top: -60px;
 }
 .add.add-upd {
-  font-size: 1em;
-  position: relative;
-  top: 35px;
+  left: 26px;
+}
+.add.add-text {
+  margin-top: 35px;
   left: 26px;
 }
 .add:active {
-  margin-top: 1px;
+  top: 1px;
   background: #576270;
 }
 .add:hover {
@@ -374,6 +378,7 @@ BODY {
 }
 .btn-block {
   margin-left: 15px;
+  clear: both;
 }
 .btn {
   display: inline-block;
@@ -391,11 +396,6 @@ BODY {
   font-weight: 700;
   font-size: 16px;
   padding: 4px 20px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background: rgba(0, 0, 0, 0);
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
@@ -477,4 +477,7 @@ BODY {
   font-weight: 400;
   font-size: 1.2em;
   margin-right: .3em;
+}
+.form-add-font {
+  margin-bottom: 20px;
 }
