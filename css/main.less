@@ -15,12 +15,14 @@ BODY{
 }
 
 .container {
-  max-width: 1400px;
   padding-right: 14px;
   padding-left: 14px;
-  margin-right: auto;
-  margin-left: auto;
   background: white;
+}
+
+.content{
+  min-width: 100%;
+  max-width: 1400px;
 }
 
 .row {
@@ -279,11 +281,16 @@ BODY{
 .sample {
   margin-bottom: 8px;
 }
+
 .btn-block{
   margin-left: 15px;
   clear: both;
-
 }
+.btn-fix:nth-child(2){
+  margin-top: 38px;
+  margin-left: 90px;
+}
+
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -401,5 +408,9 @@ BODY{
   margin-right: .3em;
 }
 .form-add-font{
+  width: 655px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   margin-bottom: 20px;
 }

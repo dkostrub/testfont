@@ -13,6 +13,7 @@ require_once "lib/lib.inc.php";
 
     <link rel="stylesheet" type="text/css" href="css/main.css?<?php echo rand(0, 99999) ?>" />
     <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/myfont.css" />
 </head>
 <body>
 <div class="container">
@@ -64,30 +65,13 @@ require_once "lib/lib.inc.php";
 </svg>
 
 <?php
-    if($_POST['update']){
-    $fontfamely = $res['fontfamely'];
-    $font_url = $res['font_url'];
-    echo <<<HTML
-<style type=”text/css”>
-    @font-face {
-        font-weight: normal;
-        font-style: normal;
-        font-family: $fontfamely;
-        src: local('$fontfamely');
-        src: url('fonts/$font_url.eot');
-        src: url('fonts/$font_url.eot#iefix') format('embedded-opentype'),
-        url('fonts/$font_url.woff') format('woff'),
-        url('fonts/$font_url.ttf') format('truetype'),
-        url('fonts/$font_url.svg') format('svg');
-    }
-</style>
-HTML;
-}
+
 //session_destroy();
 ?>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/test.js"></script>
 
 </body>
 </html>
