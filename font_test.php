@@ -40,45 +40,118 @@ $lang = ['ua' => 'Українська', 'ru' => 'Русский', 'es' => 'Engl
 require_once "select_font.php";
 ?>
 <div class="content">
+    <div data-id="0" class="cloneText" style="display: none">
+        <div class="form-font">
+            (
+            <span class="font"><?=$res['font']?></span>
+            <div class="style" data-object="0" id="0">
+                <span class="selectedStyle">normal</span>
+                <ul>
+                    <li data-style="normal">normal</li>
+                    <li data-style="italic">italic</li>
+                    <li data-style="oblique">oblique</li>
+                </ul>
+            </div>
+            <div class="weight" data-object="0" id="0">
+                <span class="selectedWeight">100</span>
+                <ul>
+                    <?php
+                    for ($i = 100; $i <=900; $i+=100) {
+                        $selected = '';
+                        if($_POST['weight-form'] == $i) $selected = 'selected';
+                        echo "<li data-weight=" . $i . ">" . $i . "</li>";
+                    }
+                    ?>
+                </ul>
+            </div>
+            )
+        </div>
+        <div class="title" style="font-family: <?=$res['fontfamely']?>; font-style: <?=$res['style']?>;">
+            <h1>(H1) Первый новый год</h1>
+            <h2>(H2) Первый новый год</h2>
+            <h3>(H3) Первый новый год</h3>
+            <h4>(H4) Первый новый год</h4>
+            <h5>(H5) Первый новый год</h5>
+            <h6>(H6) Первый новый год</h6>
+        </div>
+        <div data-text-id="0" class="txt" style="font-family: <?=$res['fontfamely']?>; font-weight: <?=$res['weight']?>; font-style: <?=$res['style']?>;">
+            <div class="font">
+                <span><strong><?=$res['size']?>px</strong></span>
+                <p style="font-size: <?=$res['size']?>px; ">
+                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+                </p>
+                <p style="font-size: <?=$res['size']?>px; ">
+                    АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЪЭЮЯ
+                </p>
+                <p style="font-size: <?=$res['size']?>px; ">
+                    абвгдежзийклмнопрстуфхцчшщьъэюя
+                </p>
+            </div>
+            <div class="font">
+                <span><strong><?=$res['size']-2?>px</strong></span>
+                <p style="font-size: <?=$res['size']-2?>px; ">
+                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+                </p>
+                <p style="font-size: <?=$res['size']-2?>px; ">
+                    АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЪЭЮЯ
+                </p>
+                <p style="font-size: <?=$res['size']-2?>px; ">
+                    абвгдежзийклмнопрстуфхцчшщьъэюя
+                </p>
+            </div>
+            <div class="font">
+                <span><strong><?=$res['size']-4?>px</strong></span>
+                <p style="font-size: <?=$res['size']-4?>px; ">
+                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+                </p>
+                <p style="font-size: <?=$res['size']-4?>px; ">
+                    АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЪЭЮЯ
+                </p>
+                <p style="font-size: <?=$res['size']-4?>px; ">
+                    абвгдежзийклмнопрстуфхцчшщьъэюя
+                </p>
+            </div>
+            <div class="font">
+                <span><strong><?=ceil($res['size']/2)?>px</strong></span>
+                <p style="font-size: <?=ceil($res['size']/2)?>px;">
+                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+                </p>
+                <p style="font-size: <?=ceil($res['size']/2)?>px; ">
+                    АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЪЭЮЯ
+                </p>
+                <p style="font-size: <?=ceil($res['size']/2)?>px; ">
+                    абвгдежзийклмнопрстуфхцчшщьъэюя
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="test">
-            <div id='0' class="col-md-12 text">
+            <div data-id="0" class="text col-md-12">
                 <div class="form-font">
-                    <form action="" method="post" enctype="multipart/form-data">
-                        <fieldset class="options">
-                            <div class="field col-md-4">
-                                <label for="size">Font size</label><br/>
-                                <input name="size-form" type="number" min="1" max="100" value="<?=$res['size']?>" step="1" id="size"/>
-                            </div>
-                            <div class="field col-md-4">
-                                <label for="weight">Font weight</label><br/>
-                                <select name="weight-form" id="weight">
-                                    <?php
-                                    for ($i = 100; $i <=900; $i+=100) {
-                                        $selected = '';
-                                        if($_POST['weight-form'] == $i) $selected = 'selected';
-                                        echo "<option value=" . $i . ">" . $i . "</option>";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
-                            <div class="field col-md-4">
-                                <label for="style">Font style</label><br/>
-                                <select name="style-form" id="style">
-                                    <option value="normal" <?php if($_POST['style-form'] == 'normal'){echo "selected='selected'";}?>>normal</option>
-                                    <option value="italic" <?php if($_POST['style-form'] == 'italic'){echo "selected='selected'";}?>>italic</option>
-                                    <option value="oblique" <?php if($_POST['style-form'] == 'oblique'){echo "selected='selected'";}?>>oblique</option>
-                                </select>
-                            </div>
-                            <input type="button" value="Reload" name="reload" class="add reload"/>
-                        </fieldset>
-                    </form>
-                            <p>Font: <span style="font-size: 18px; font-weight: bold"><?=$res['font']?></span></p>
-                            <p>Size: <?=$res['size']?></p>
-                            <p>Weight: <?=$res['weight']?></p>
-                            <p>Style: <?=$res['style']?></p>
-                            <p>Lang: <?=$lang['ru']?></p>
-                            <p>Reload</p>
+                    (
+                    <span class="font"><?=$res['font']?></span>
+                    <div class="style" data-object="0" id="0">
+                        <span class="selectedStyle">normal</span>
+                        <ul>
+                            <li data-style="normal">normal</li>
+                            <li data-style="italic">italic</li>
+                            <li data-style="oblique">oblique</li>
+                        </ul>
+                    </div>
+                    <div class="weight" data-object="0" id="0">
+                        <span class="selectedWeight">100</span>
+                        <ul>
+                            <?php
+                            for ($i = 100; $i <=900; $i+=100) {
+                                $selected = '';
+                                if($_POST['weight-form'] == $i) $selected = 'selected';
+                                echo "<li data-weight=" . $i . ">" . $i . "</li>";
+                            }
+                            ?>
+                        </ul>
+                    </div>
+                    )
                 </div>
                 <div class="title" style="font-family: <?=$res['fontfamely']?>; font-style: <?=$res['style']?>;">
                     <h1>(H1) Первый новый год</h1>
@@ -88,9 +161,9 @@ require_once "select_font.php";
                     <h5>(H5) Первый новый год</h5>
                     <h6>(H6) Первый новый год</h6>
                 </div>
-                <div class="txt" style="font-family: <?=$res['fontfamely']?>; ont-weight: <?=$res['weight']?>; font-style: <?=$res['style']?>;">
+                <div data-text-id="0" class="txt" style="font-family: <?=$res['fontfamely']?>; font-weight: <?=$res['weight']?>; font-style: <?=$res['style']?>;">
                     <div class="font">
-                        <span><?=$res['size']?>px</span>
+                        <span><strong><?=$res['size']?>px</strong></span>
                         <p style="font-size: <?=$res['size']?>px; ">
                             Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
                         </p>
@@ -102,7 +175,7 @@ require_once "select_font.php";
                         </p>
                     </div>
                     <div class="font">
-                        <span><?=$res['size']-2?>px</span>
+                        <span><strong><?=$res['size']-2?>px</strong></span>
                         <p style="font-size: <?=$res['size']-2?>px; ">
                             Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
                         </p>
@@ -114,7 +187,7 @@ require_once "select_font.php";
                         </p>
                     </div>
                     <div class="font">
-                        <span><?=$res['size']-4?>px</span>
+                        <span><strong><?=$res['size']-4?>px</strong></span>
                         <p style="font-size: <?=$res['size']-4?>px; ">
                             Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
                         </p>
@@ -126,7 +199,7 @@ require_once "select_font.php";
                         </p>
                     </div>
                     <div class="font">
-                        <span><?=ceil($res['size']/2)?>px</span>
+                        <span><strong><?=ceil($res['size']/2)?>px</strong></span>
                         <p style="font-size: <?=ceil($res['size']/2)?>px;">
                             Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
                         </p>

@@ -71,7 +71,7 @@ require_once "lib/lib.inc.php";
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/test.js"></script>
+<!--<script src="js/test.js"></script>-->
 
 </body>
 </html>

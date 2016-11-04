@@ -143,6 +143,11 @@ BODY {
   position: relative;
   color: #010000;
   background: #FFFFFF;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
 }
 .container {
   padding-right: 14px;
@@ -152,6 +157,10 @@ BODY {
 .content {
   min-width: 100%;
   max-width: 1400px;
+}
+*:after,
+*:before {
+  box-sizing: border-box;
 }
 .row {
   margin-left: -7px;
@@ -489,4 +498,105 @@ BODY {
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 20px;
+}
+.form-font {
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 310px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form-font .font {
+  position: relative;
+  color: #888;
+  margin: 0;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+}
+.form-font .weight {
+  position: relative;
+  color: #888;
+  border: none;
+  cursor: pointer;
+  padding: 5px 5px;
+  padding-right: 15px;
+  margin: 0;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+}
+.form-font .weight span {
+  height: 15px;
+}
+.form-font .weight ul li {
+  padding: 5px 0;
+}
+.form-font .weight ul {
+  position: absolute;
+  right: -16px;
+  top: 25px;
+  width: 80px;
+  display: none;
+  background: white;
+  z-index: 11;
+  box-shadow: 1px 3px 5px;
+}
+.form-font .weight:after {
+  position: absolute;
+  top: 11px;
+  right: 5px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 3px 0 3px;
+  border-color: #000000 transparent transparent transparent;
+}
+.form-font .style {
+  width: 45px;
+  position: relative;
+  color: #888;
+  border: none;
+  cursor: pointer;
+  padding: 5px 5px;
+  padding-right: 15px;
+  margin: 0;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+}
+.form-font .style span {
+  height: 15px;
+}
+.form-font .style ul li {
+  padding: 5px 0;
+}
+.form-font .style ul {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 80px;
+  display: none;
+  background: white;
+  z-index: 11;
+  box-shadow: 1px 3px 5px;
+}
+.form-font .style:after {
+  position: absolute;
+  top: 11px;
+  right: 5px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 3px 0 3px;
+  border-color: #000000 transparent transparent transparent;
 }
