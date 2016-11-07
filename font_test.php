@@ -65,8 +65,9 @@ require_once "select_font.php";
                 </ul>
             </div>
             )
+            <span class="remove">&times;</span>
         </div>
-        <div class="title" style="font-family: <?=$res['fontfamely']?>; font-style: <?=$res['style']?>;">
+        <div data-title-id="0" class="title" style="font-family: <?=$res['fontfamely']?>; font-style: <?=$res['style']?>;">
             <h1>(H1) Первый новый год</h1>
             <h2>(H2) Первый новый год</h2>
             <h3>(H3) Первый новый год</h3>
@@ -124,6 +125,50 @@ require_once "select_font.php";
                 </p>
             </div>
         </div>
+        <div class="btn-block">
+            <div class="col-md-4">
+                <h1>Кнопки с иконкой</h1>
+                <p>&nbsp;</p>
+                <div class="sample">
+                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm"><div><i class="ico icon-user"></i>Маленькая кнопка</div></button>
+                </div>
+                <div class="sample">
+                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div><i class="ico icon-user"></i>Кнопка</div></button>
+                </div>
+                <div class="sample">
+                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div><i class="ico icon-user"></i>Средняя кнопка</div></button>
+                </div>
+                <div class="sample">
+                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div><i class="ico icon-user"></i>Большая кнопка</div></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h1>Кнопки</h1>
+                <p>&nbsp;</p>
+                <div class="sample">
+                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm""><div>Маленькая кнопка</div></button>
+                </div>
+                <div class="sample">
+                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div>Кнопка</div></button>
+                </div>
+                <div class="sample">
+                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div>Средняя кнопка</div></button>
+                </div>
+                <div class="sample">
+                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div>Большая кнопка</div></button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form_block">
+                    <div class="form_block__label">
+                        <label>Дефолтный поинт</label>
+                    </div>
+                    <div class="form_block__input">
+                        <input style="font-family: <?=$res['fontfamely']?>;" type="text" placeholder="Введи сюда текст...">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="test">
@@ -152,8 +197,9 @@ require_once "select_font.php";
                         </ul>
                     </div>
                     )
+                    <span class="remove">&times;</span>
                 </div>
-                <div class="title" style="font-family: <?=$res['fontfamely']?>; font-style: <?=$res['style']?>;">
+                <div data-title-id="0" class="title" style="font-family: <?=$res['fontfamely']?>; font-style: <?=$res['style']?>;">
                     <h1>(H1) Первый новый год</h1>
                     <h2>(H2) Первый новый год</h2>
                     <h3>(H3) Первый новый год</h3>
@@ -211,48 +257,48 @@ require_once "select_font.php";
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="btn-block">
-            <div class="col-md-4">
-                <h1>Кнопки с иконкой</h1>
-                <p>&nbsp;</p>
-                <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm"><div><i class="ico icon-user"></i>Маленькая кнопка</div></button>
-                </div>
-                <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div><i class="ico icon-user"></i>Кнопка</div></button>
-                </div>
-                <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div><i class="ico icon-user"></i>Средняя кнопка</div></button>
-                </div>
-                <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div><i class="ico icon-user"></i>Большая кнопка</div></button>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h1>Кнопки</h1>
-                <p>&nbsp;</p>
-                <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm""><div>Маленькая кнопка</div></button>
-                </div>
-                <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div>Кнопка</div></button>
-                </div>
-                <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div>Средняя кнопка</div></button>
-                </div>
-                <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div>Большая кнопка</div></button>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="form_block">
-                    <div class="form_block__label">
-                        <label>Дефолтный поинт</label>
+                <div class="btn-block">
+                    <div class="col-md-4">
+                        <h1>Кнопки с иконкой</h1>
+                        <p>&nbsp;</p>
+                        <div class="sample">
+                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm"><div><i class="ico icon-user"></i>Маленькая кнопка</div></button>
+                        </div>
+                        <div class="sample">
+                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div><i class="ico icon-user"></i>Кнопка</div></button>
+                        </div>
+                        <div class="sample">
+                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div><i class="ico icon-user"></i>Средняя кнопка</div></button>
+                        </div>
+                        <div class="sample">
+                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div><i class="ico icon-user"></i>Большая кнопка</div></button>
+                        </div>
                     </div>
-                    <div class="form_block__input">
-                        <input style="font-family: <?=$res['fontfamely']?>;" type="text" placeholder="Введи сюда текст...">
+                    <div class="col-md-4">
+                        <h1>Кнопки</h1>
+                        <p>&nbsp;</p>
+                        <div class="sample">
+                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm""><div>Маленькая кнопка</div></button>
+                        </div>
+                        <div class="sample">
+                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div>Кнопка</div></button>
+                        </div>
+                        <div class="sample">
+                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div>Средняя кнопка</div></button>
+                        </div>
+                        <div class="sample">
+                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div>Большая кнопка</div></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form_block">
+                            <div class="form_block__label">
+                                <label>Дефолтный поинт</label>
+                            </div>
+                            <div class="form_block__input">
+                                <input style="font-family: <?=$res['fontfamely']?>;" type="text" placeholder="Введи сюда текст...">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

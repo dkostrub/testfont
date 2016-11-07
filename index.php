@@ -1,5 +1,11 @@
 <?php
-session_start();
+//session_start();
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s")." GMT");
+header("Cache-Control: no-cache, must-revalidate");
+header("Cache-Control: post-check=0,pre-check=0", false);
+header("Cache-Control: max-age=0", false);
+header("Pragma: no-cache");
 require_once "lib/lib.inc.php";
 ?>
 <!DOCTYPE HTML>
@@ -70,7 +76,7 @@ require_once "lib/lib.inc.php";
 ?>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?<?php echo rand(0, 99999) ?>"></script>
 <!--<script src="js/test.js"></script>-->
 
 </body>
