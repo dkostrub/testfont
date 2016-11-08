@@ -427,7 +427,7 @@ ol, ul {
 .form-font {
   margin-left: 15px;
   margin-top: 15px;
-  width: 310px;
+  width: 350px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -536,10 +536,10 @@ ol, ul {
       border-color: #000000 transparent transparent transparent;
     }
   }
-
 }
 
 .remove{
+  display: inline-block;
   font-size: 19px;
   font-weight: 800;
   color: red;
@@ -547,4 +547,13 @@ ol, ul {
   top: 2px;
   left: 5px;
   cursor: pointer;
+  transition: transform .2s ease-out;
+
+  &:hover {
+    font-size: 19px;
+    display: inline-block;
+    color: #FF003D;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
 }

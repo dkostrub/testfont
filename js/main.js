@@ -22,8 +22,23 @@ $(document).ready(function() {
         var cloneText = $('.cloneText').clone().removeClass('cloneText').css('display', '').data('id', counter).attr('data-id', counter);
         cloneText.children('.form-font').children('.style').data('object', counter).attr('data-object', counter);
         cloneText.children('.form-font').children('.weight').data('object', counter).attr('data-object', counter);
+        cloneText.children('.form-font').children('.font').text(font);
+        cloneText.children('.form-font').children('.style').find('.selectedStyle').text(style);
+        cloneText.children('.form-font').children('.weight').find('.selectedWeight').text(weight);
         cloneText.children('.txt').data('.textId', counter).attr('data-text-id', counter);
         cloneText.children('.title').data('.titleId', counter).attr('data-title-id', counter);
+        cloneText.find('.title').css({'font-family': fontfamely, 'font-style': style});
+        cloneText.find('.txt').css({'font-family': fontfamely, 'font-weight': weight, 'font-style': style});
+        cloneText.find('.btn').css('font-family', fontfamely);
+        cloneText.find('.form_block__input > input').css('font-family', fontfamely);
+        cloneText.children('.txt').children('.font[id="1"]').find('span').html('<strong>'+size+'px</strong>');
+        cloneText.children('.txt').children('.font[id="2"]').find('span').html('<strong>'+size1+'px</strong>');
+        cloneText.children('.txt').children('.font[id="3"]').find('span').html('<strong>'+size2+'px</strong>');
+        cloneText.children('.txt').children('.font[id="4"]').find('span').html('<strong>'+size3+'px</strong>');
+        cloneText.children('.txt').children('.font[id="1"]').find('p').css('font-size', size+'px');
+        cloneText.children('.txt').children('.font[id="2"]').find('p').css('font-size', size1+'px');
+        cloneText.children('.txt').children('.font[id="3"]').find('p').css('font-size', size2+'px');
+        cloneText.children('.txt').children('.font[id="4"]').find('p').css('font-size', size3+'px');
 
         if(counter > 1){
             if(counter > 1 && $('.text').length == 1){
