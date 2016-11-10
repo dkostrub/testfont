@@ -47,6 +47,7 @@ $(document).ready(function() {
             }else {
                 $('.text').removeClass('col-md-6').addClass('col-md-4');
                 cloneText.addClass('text col-md-4').appendTo('.test');
+                $('.remove').css('display', 'none');
             }
             $('.btn-block .col-md-4').removeClass("col-md-4").addClass('col-md-6');
             $('.btn-block .col-md-3').removeClass("col-md-3").addClass('col-md-6');
@@ -54,10 +55,20 @@ $(document).ready(function() {
             $('.text').removeClass('col-md-12').addClass('col-md-6');
             cloneText.addClass('text col-md-6').appendTo('.test');
         }
+
+        if($('.text').length != 1) {
+            $('.remove').css('display', '');
+        }
+
         weightInizialize();
         styleInizialize();
+
+        $("#status").load("action.php","fontfamily="+font);
+
         e.stopPropagation();
     });
+
+     $('.remove').css('display', 'none');
 
     function weightInizialize() {
         $(this).on('click', function() {
@@ -123,7 +134,27 @@ $(document).ready(function() {
             $('.text').removeClass('col-md-4').addClass('col-md-6');
         }
         if($('.text').length == 1){
-            $('.text').removeClass('col-md-6').addClass('col-md-12')
+            $('.text').removeClass('col-md-6').addClass('col-md-12');
         }
     });
+
+    // $('.font-form').on('click', function(e){
+    //     e.preventDefault();
+        // var data = $('.font-form').serializeArray();
+        // var data = $(this),
+        //     fData = data.serialize();
+        // $.ajax({
+        //     url: data.attr('action'), // путь к обработчику берем из атрибута action
+        //     type: data.attr('method'), // метод передачи - берем из атрибута method
+        //     data: {form_data: fData},
+        //     dataType: 'json',
+        //     success: function(json){
+        //         // В случае успешного завершения запроса...
+        //         if(json){
+        //             data.replaceWith(json); // заменим форму данными, полученными в ответе.
+        //         }
+        //     }
+        // });
+    // });
+
 });

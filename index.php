@@ -7,6 +7,36 @@ header("Cache-Control: post-check=0,pre-check=0", false);
 header("Cache-Control: max-age=0", false);
 header("Pragma: no-cache");
 require_once "lib/lib.inc.php";
+
+////serializeArray
+//if(isset($_POST['form_data'])) {
+//    $req = false; // изначально переменная для "ответа" - false
+//    // Приведём полученную информацию в удобочитаемый вид
+//    ob_start();
+//    echo '<pre>';
+//    print_r($_POST['form_data']);
+//    echo '</pre>';
+//    $req = ob_get_contents();
+//    ob_end_clean();
+//    echo json_encode($req); // вернем полученное в ответе
+//    exit;
+//}
+
+////serialize
+//if(isset($_POST['form_data'])){
+//    $req = false;
+//    parse_str($_POST['form_data'], $form_data);
+//    ob_start();
+//    echo 'До обработки: ' . $_POST['form_data'];
+//    echo 'После обработки:';
+//    echo '<pre>';
+//    print_r($form_data);
+//    echo '</pre>';
+//    $req = ob_get_contents();
+//    ob_end_clean();
+//    json_encode($req); // вернем полученное в ответе
+//    exit;
+//}
 ?>
 <!DOCTYPE HTML>
 <html>

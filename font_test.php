@@ -30,7 +30,7 @@ if(isset($_POST['update']) ){
             url(\'/fonts/'.$res['font_url'].'.ttf\') format(\'truetype\'),
             url(\'/fonts/'.$res['font_url'].'.svg\') format(\'svg\');
         }';
-        $writeCss = fwrite($fp, $fontStyle);
+        $writeCss = fwrite($fp, $fontStyle . PHP_EOL);
         fclose($fp);
     }
 }

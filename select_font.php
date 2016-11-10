@@ -4,6 +4,7 @@
 <div class="row">
     <div class="form-add-font">
         <div class="col-md-12">
+            <p id="status"></p>
             <form action="" method="post" enctype="multipart/form-data" class="font-form">
                 <fieldset class="options fix">
                     <div class="main">
@@ -48,7 +49,7 @@
                     </div>
                 </fieldset>
                 <!--            <input type="submit" value="Добавить блок" name="submit" class="add add-upd"/>-->
-                <input type="button" value="Добавить блок" name="add-text" class="add add-text"/>
+                <input type="button" value="Добавить блок" name="add-text" class="add add-text" />
             </form>
             <div class="add add-font">
                 <a href="">Загрузить новый шрифт</a>
