@@ -1,6 +1,3 @@
-<?php
-//var_dump($res);
-?>
 <div class="row">
     <div class="form-add-font">
         <div class="col-md-12">

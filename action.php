@@ -7,8 +7,7 @@ header("Cache-Control: post-check=0, pre-check=0", false);
 
 if (isset($_REQUEST['fontfamily'])) {
     $fontfamily = stripslashes($_REQUEST['fontfamily']);
-    $exploded = multiexplode(array(",",".","-","_"," "),$fontfamily);
-    $font = $exploded[0];
+    $font = str_replace(' ', '', $fontfamily);
     $font_url = str_replace(' ', '-', $fontfamily);
     $myFontCss = 'css/myfont.css';
     if(is_file($myFontCss)){

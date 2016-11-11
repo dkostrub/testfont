@@ -16,14 +16,15 @@ $font = basename($_FILES['filename']['name'][$k]);
 if(isset($_POST['update']) ){
     $res = createFont($font);
     $filename = $res['filename'];
+    $fontfamely = str_replace(' ', '', $res['font']);
     $myFontCss = 'css/myfont.css';
     if(is_file($myFontCss)){
         $fp = fopen($myFontCss, 'w');
         $fontStyle = '@font-face {
             font-weight: normal;
             font-style: normal;
-            font-family: '.$res['fontfamely'].';
-            src: local(\''.$res['fontfamely'].'\');
+            font-family: '.$fontfamely.';
+            src: local(\''.$fontfamely.'\');
             src: url(\'/fonts/'.$res['font_url'].'.eot\');
             src: url(\'/fonts/'.$res['font_url'].'.eot#iefix\') format(\'embedded-opentype\'),
             url(\'/fonts/'.$res['font_url'].'.woff\') format(\'woff\'),
@@ -65,9 +66,9 @@ require_once "select_font.php";
                 </ul>
             </div>
             )
-            <span class="remove">&times;</span>
+            <span style="display: none" class="remove">&times;</span>
         </div>
-        <div data-title-id="0" class="title" style="font-family: <?=$res['fontfamely']?>; font-style: <?=$res['style']?>;">
+        <div data-title-id="0" class="title" style="font-family: <?=$fontfamely?>; font-style: <?=$res['style']?>;">
             <h1>(H1) Первый новый год</h1>
             <h2>(H2) Первый новый год</h2>
             <h3>(H3) Первый новый год</h3>
@@ -75,7 +76,7 @@ require_once "select_font.php";
             <h5>(H5) Первый новый год</h5>
             <h6>(H6) Первый новый год</h6>
         </div>
-        <div data-text-id="0" class="txt" style="font-family: <?=$res['fontfamely']?>; font-weight: <?=$res['weight']?>; font-style: <?=$res['style']?>;">
+        <div data-text-id="0" class="txt" style="font-family: <?=$fontfamely?>; font-weight: <?=$res['weight']?>; font-style: <?=$res['style']?>;">
             <div class="font" id="1">
                 <span><strong><?=$res['size']?>px</strong></span>
                 <p style="font-size: <?=$res['size']?>px; ">
@@ -130,32 +131,32 @@ require_once "select_font.php";
                 <h1>Кнопки с иконкой</h1>
                 <p>&nbsp;</p>
                 <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm"><div><i class="ico icon-user"></i>Маленькая кнопка</div></button>
+                    <button style="font-family: <?=$fontfamely?>;" class="btn btn-sm"><div><i class="ico icon-user"></i>Маленькая кнопка</div></button>
                 </div>
                 <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div><i class="ico icon-user"></i>Кнопка</div></button>
+                    <button style="font-family: <?=$fontfamely?>;" class="btn"><div><i class="ico icon-user"></i>Кнопка</div></button>
                 </div>
                 <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div><i class="ico icon-user"></i>Средняя кнопка</div></button>
+                    <button style="font-family: <?=$fontfamely?>;" class="btn btn-sm-square"><div><i class="ico icon-user"></i>Средняя кнопка</div></button>
                 </div>
                 <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div><i class="ico icon-user"></i>Большая кнопка</div></button>
+                    <button style="font-family: <?=$fontfamely?>;" class="btn btn-square"><div><i class="ico icon-user"></i>Большая кнопка</div></button>
                 </div>
             </div>
             <div class="col-md-4">
                 <h1>Кнопки</h1>
                 <p>&nbsp;</p>
                 <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm""><div>Маленькая кнопка</div></button>
+                    <button style="font-family: <?=$fontfamely?>;" class="btn btn-sm""><div>Маленькая кнопка</div></button>
                 </div>
                 <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div>Кнопка</div></button>
+                    <button style="font-family: <?=$fontfamely?>;" class="btn"><div>Кнопка</div></button>
                 </div>
                 <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div>Средняя кнопка</div></button>
+                    <button style="font-family: <?=$fontfamely?>;" class="btn btn-sm-square"><div>Средняя кнопка</div></button>
                 </div>
                 <div class="sample">
-                    <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div>Большая кнопка</div></button>
+                    <button style="font-family: <?=$fontfamely?>;" class="btn btn-square"><div>Большая кнопка</div></button>
                 </div>
             </div>
             <div class="col-md-3">
@@ -164,7 +165,7 @@ require_once "select_font.php";
                         <label>Дефолтный поинт</label>
                     </div>
                     <div class="form_block__input">
-                        <input style="font-family: <?=$res['fontfamely']?>;" type="text" placeholder="Введи сюда текст...">
+                        <input style="font-family: <?=$fontfamely?>;" type="text" placeholder="Введи сюда текст...">
                     </div>
                 </div>
             </div>
@@ -197,9 +198,9 @@ require_once "select_font.php";
                         </ul>
                     </div>
                     )
-                    <span class="remove">&times;</span>
+                    <span style="display: none" class="remove">&times;</span>
                 </div>
-                <div data-title-id="0" class="title" style="font-family: <?=$res['fontfamely']?>; font-style: <?=$res['style']?>;">
+                <div data-title-id="0" class="title" style="font-family: <?=$fontfamely?>; font-style: <?=$res['style']?>;">
                     <h1>(H1) Первый новый год</h1>
                     <h2>(H2) Первый новый год</h2>
                     <h3>(H3) Первый новый год</h3>
@@ -207,7 +208,7 @@ require_once "select_font.php";
                     <h5>(H5) Первый новый год</h5>
                     <h6>(H6) Первый новый год</h6>
                 </div>
-                <div data-text-id="0" class="txt" style="font-family: <?=$res['fontfamely']?>; font-weight: <?=$res['weight']?>; font-style: <?=$res['style']?>;">
+                <div data-text-id="0" class="txt" style="font-family: <?=$fontfamely?>; font-weight: <?=$res['weight']?>; font-style: <?=$res['style']?>;">
                     <div class="font" id="1">
                         <span><strong><?=$res['size']?>px</strong></span>
                         <p style="font-size: <?=$res['size']?>px; ">
@@ -262,32 +263,32 @@ require_once "select_font.php";
                         <h1>Кнопки с иконкой</h1>
                         <p>&nbsp;</p>
                         <div class="sample">
-                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm"><div><i class="ico icon-user"></i>Маленькая кнопка</div></button>
+                            <button style="font-family: <?=$fontfamely?>;" class="btn btn-sm"><div><i class="ico icon-user"></i>Маленькая кнопка</div></button>
                         </div>
                         <div class="sample">
-                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div><i class="ico icon-user"></i>Кнопка</div></button>
+                            <button style="font-family: <?=$fontfamely?>;" class="btn"><div><i class="ico icon-user"></i>Кнопка</div></button>
                         </div>
                         <div class="sample">
-                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div><i class="ico icon-user"></i>Средняя кнопка</div></button>
+                            <button style="font-family: <?=$fontfamely?>;" class="btn btn-sm-square"><div><i class="ico icon-user"></i>Средняя кнопка</div></button>
                         </div>
                         <div class="sample">
-                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div><i class="ico icon-user"></i>Большая кнопка</div></button>
+                            <button style="font-family: <?=$fontfamely?>;" class="btn btn-square"><div><i class="ico icon-user"></i>Большая кнопка</div></button>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <h1>Кнопки</h1>
                         <p>&nbsp;</p>
                         <div class="sample">
-                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm""><div>Маленькая кнопка</div></button>
+                            <button style="font-family: <?=$fontfamely?>;" class="btn btn-sm""><div>Маленькая кнопка</div></button>
                         </div>
                         <div class="sample">
-                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn"><div>Кнопка</div></button>
+                            <button style="font-family: <?=$fontfamely?>;" class="btn"><div>Кнопка</div></button>
                         </div>
                         <div class="sample">
-                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-sm-square"><div>Средняя кнопка</div></button>
+                            <button style="font-family: <?=$fontfamely?>;" class="btn btn-sm-square"><div>Средняя кнопка</div></button>
                         </div>
                         <div class="sample">
-                            <button style="font-family: <?=$res['fontfamely']?>;" class="btn btn-square"><div>Большая кнопка</div></button>
+                            <button style="font-family: <?=$fontfamely?>;" class="btn btn-square"><div>Большая кнопка</div></button>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -296,7 +297,7 @@ require_once "select_font.php";
                                 <label>Дефолтный поинт</label>
                             </div>
                             <div class="form_block__input">
-                                <input style="font-family: <?=$res['fontfamely']?>;" type="text" placeholder="Введи сюда текст...">
+                                <input style="font-family: <?=$fontfamely?>;" type="text" placeholder="Введи сюда текст...">
                             </div>
                         </div>
                     </div>

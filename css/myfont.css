@@ -1,8 +1,8 @@
 @font-face {
             font-weight: normal;
             font-style: normal;
-            font-family: BebasNeue;
-            src: local('BebasNeue');
+            font-family: BebasNeueBook;
+            src: local('BebasNeueBook');
             src: url('/fonts/BebasNeue-Book.eot');
             src: url('/fonts/BebasNeue-Book.eot#iefix') format('embedded-opentype'),
             url('/fonts/BebasNeue-Book.woff') format('woff'),
@@ -12,8 +12,8 @@
 @font-face {
             font-weight: normal;
             font-style: normal;
-            font-family: BebasNeue;
-            src: local('BebasNeue');
+            font-family: BebasNeueBook;
+            src: local('BebasNeueBook');
             src: url('/fonts/BebasNeue-Book.eot');
             src: url('/fonts/BebasNeue-Book.eot#iefix') format('embedded-opentype'),
             url('/fonts/BebasNeue-Book.woff') format('woff'),

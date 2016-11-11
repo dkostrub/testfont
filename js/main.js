@@ -9,10 +9,10 @@ $(document).ready(function() {
         size = str[1].value;
         weight = str[2].value;
         style = str[3].value;
-        font_url = font.replace(/\s/gi, "-");
 
+        font_url = font.replace(/\s/gi, "-");
         var res = font.split(/([\s\-\_])/i);
-        fontfamely = res[0];
+        fontfamely = font.replace(/\s/gi, "");
 
         var size1, size2, size3;
         size1 = size-2;
@@ -50,13 +50,13 @@ $(document).ready(function() {
                 $('.remove').css('display', 'none');
             }
             $('.btn-block .col-md-4').removeClass("col-md-4").addClass('col-md-6');
-            $('.btn-block .col-md-3').removeClass("col-md-3").addClass('col-md-6');
+            $('.btn-block .col-md-3').removeClass("col-md-3").addClass('search col-md-6');
         }else {
             $('.text').removeClass('col-md-12').addClass('col-md-6');
             cloneText.addClass('text col-md-6').appendTo('.test');
         }
 
-        if($('.text').length != 1) {
+        if($('.text').length > 1) {
             $('.remove').css('display', '');
         }
 
@@ -67,8 +67,6 @@ $(document).ready(function() {
 
         e.stopPropagation();
     });
-
-     $('.remove').css('display', 'none');
 
     function weightInizialize() {
         $(this).on('click', function() {
@@ -133,8 +131,11 @@ $(document).ready(function() {
         if($('.text').length < 3 && $('.text').length != 1){
             $('.text').removeClass('col-md-4').addClass('col-md-6');
         }
-        if($('.text').length == 1){
+        if($('.text').length == 1 || $('.text').length == 0){
             $('.text').removeClass('col-md-6').addClass('col-md-12');
+            $('.remove').css('display', 'none');
+            $('.btn-block .col-md-6').removeClass("col-md-6").addClass('col-md-4');
+            $('.btn-block .search').removeClass("col-md-4").addClass('col-md-3');
         }
     });
 
