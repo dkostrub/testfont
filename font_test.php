@@ -12,24 +12,25 @@ foreach($files as $val){
 }
 $result = array_unique($arr);
 
-$font = basename($_FILES['filename']['name'][$k]);
 if(isset($_POST['update']) ){
     $res = createFont($font);
-    $filename = $res['filename'];
+    $filename = str_replace('-', ' ', $res['filename']);
+    $fontString = str_replace(' ', '-', $filename);
     $fontfamely = str_replace(' ', '', $res['font']);
-    $myFontCss = 'css/myfont.css';
+    $myFontCss = 'css/myfont.less';
     if(is_file($myFontCss)){
         $fp = fopen($myFontCss, 'w');
-        $fontStyle = '@font-face {
-            font-weight: normal;
-            font-style: normal;
+        $fontStyle = '@font-face {           
             font-family: '.$fontfamely.';
-            src: local(\''.$fontfamely.'\');
+            src: local(\''.$fontString.'\'),
+                 local(\''.$filename.'\');
             src: url(\'/fonts/'.$res['font_url'].'.eot\');
             src: url(\'/fonts/'.$res['font_url'].'.eot#iefix\') format(\'embedded-opentype\'),
-            url(\'/fonts/'.$res['font_url'].'.woff\') format(\'woff\'),
+            url(\'/fonts/'.$res['font_url'].'.woff\') format(\'woff\'),            
             url(\'/fonts/'.$res['font_url'].'.ttf\') format(\'truetype\'),
             url(\'/fonts/'.$res['font_url'].'.svg\') format(\'svg\');
+            font-weight: normal;
+            font-style: normal;
         }';
         $writeCss = fwrite($fp, $fontStyle . PHP_EOL);
         fclose($fp);

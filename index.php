@@ -1,11 +1,13 @@
 <?php
-//session_start();
 header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 header("Last-Modified: " . gmdate("D, d M Y H:i:s")." GMT");
 header("Cache-Control: no-cache, must-revalidate");
 header("Cache-Control: post-check=0,pre-check=0", false);
 header("Cache-Control: max-age=0", false);
 header("Pragma: no-cache");
+
+//session_start();
+
 require_once "lib/lib.inc.php";
 
 ////serializeArray
@@ -47,52 +49,23 @@ require_once "lib/lib.inc.php";
 
     <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
+
     <link rel="stylesheet" type="text/css" href="css/main.css?<?php echo rand(0, 99999) ?>" />
     <link rel="stylesheet" type="text/css" href="css/font.css" />
-    <link rel="stylesheet" type="text/css" href="css/myfont.css" />
+
 </head>
 <body>
 <div class="container">
     <?php
     if(isset($_POST['update'])){
+        $font = loadFont();
         if (isset($err)){
-            header ("location: {$_SERVER['REQUEST_URI']} ");
+            header ("Location: {$_SERVER['REQUEST_URI']} ");
             exit;
         }
-        if(isset($_FILES)){
-            foreach ($_FILES['filename']['name'] as $k=>$v){
-                $uploaddir = 'fonts/';
-                $uploadfile = $uploaddir . basename($_FILES['filename']['name'][$k]);
-
-                if($_FILES['filename']['type'][$k] == "image/svg+xml" ||
-                    $_FILES['filename']['type'][$k] == "application/font-woff" ||
-                    $_FILES['filename']['type'][$k] == "application/font-woff2" ||
-                    $_FILES['filename']['type'][$k] == "application/octet-stream"){
-
-                    $blacklist = array(".php", ".phtml", ".php3", ".php4");
-                    foreach ($blacklist as $item){
-                        if(preg_match("/$item\$/i", $_FILES['filename']['name'][$k])) exit;
-                    }
-                    if(is_uploaded_file($_FILES["filename"]["tmp_name"][$k])){
-//                        createFont($_FILES['filename']['name'][$k]);
-                        move_uploaded_file($_FILES['filename']['tmp_name'][$k], $uploadfile);
-                        require_once 'font_test.php';
-                    }else{
-                        include "load.php";
-                        echo "Файл не загружен, вернитесь и попробуйте еще раз.";
-                    }
-                }else{
-                    $err = "Ошибка загрузки файла!";
-                    include "load.php";
-                }
-            }
-        }
+        require_once 'font_test.php';
     }else{
-        if(isset($_POST['submit'])){
-            include 'font_test.php';
-        }else{
-            include "load.php";
-        }
+        require_once "load.php";
     }
     ?>
 </div>
@@ -107,7 +80,6 @@ require_once "lib/lib.inc.php";
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/main.js?<?php echo rand(0, 99999) ?>"></script>
-<!--<script src="js/test.js"></script>-->
 
 </body>
 </html>

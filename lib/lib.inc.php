@@ -7,6 +7,42 @@ function clearInt($data){
     return abs((int)$data);
 }
 
+function loadFont(){
+    if(isset($_FILES)){
+        foreach ($_FILES['filename']['name'] as $k=>$v){
+            $path_info = pathinfo(basename($_FILES['filename']['name'][$k]));
+            $filename = str_replace(' ', '-',  $path_info['filename']);
+            $ext = $path_info['extension'];
+            $uploaddir = 'fonts/';
+//                $uploadfile = $uploaddir . basename($_FILES['filename']['name'][$k]);
+            $uploadfile = $uploaddir . $filename.'.'.$ext;
+
+            if($_FILES['filename']['type'][$k] == "image/svg+xml" ||
+                $_FILES['filename']['type'][$k] == "application/font-woff" ||
+                $_FILES['filename']['type'][$k] == "application/font-woff2" ||
+                $_FILES['filename']['type'][$k] == "application/octet-stream"){
+
+                $blacklist = array(".php", ".phtml", ".php3", ".php4");
+                foreach ($blacklist as $item){
+                    if(preg_match("/$item\$/i", $_FILES['filename']['name'][$k])) exit;
+                }
+                if(is_uploaded_file($_FILES["filename"]["tmp_name"][$k])){
+                    move_uploaded_file($_FILES['filename']['tmp_name'][$k], $uploadfile);
+                }else{
+                    echo "Файл не загружен, попробуйте еще раз.";
+                    require_once "load.php";
+                    exit;
+                }
+            }else{
+                $err = "Ошибка загрузки файла!";
+                require_once "load.php";
+                exit;
+            }
+        }
+    }
+    return $font = basename($_FILES['filename']['name'][$k]);
+}
+
 function multiexplode ($delimiters,$string) {
     $ready = str_replace($delimiters, $delimiters[0], $string);
     $launch = explode($delimiters[0], $ready);
@@ -21,7 +57,7 @@ function createFont($filename){
         $filename = clearStr($_POST['font-form']);
     $exploded = multiexplode(array(",",".","-","_"," "),$filename);
     $fontfamely = $exploded[0];
-    $font_url = str_replace(' ', '-', $filename);
+    $font_url = $filename;
     $size = clearInt($_POST['size-form']);
     if($size == '') $size = '18';
     $weight = clearInt($_POST['weight-form']);
@@ -30,27 +66,3 @@ function createFont($filename){
     if($style == '') $style = 'normal';
     return array('extension'=>$ext, 'filename'=>$filename, 'fontfamely'=>$fontfamely, 'font_url'=>$font_url, 'font'=>$filename, 'size'=>$size, 'weight'=>$weight, 'style'=>$style);
 }
-
-//function createDiv(){
-//    if (!isset($_SESSION['counter'])) $_SESSION['counter']=0;
-//    $id = $_SESSION['counter']++;
-//    $res = createFont($filename);
-
-//    ${'size' . $id} = $res['size'];
-//    ${'font' . $id} = $res['font'];
-//    ${'filename' . $id} = $res['filename'];
-//    ${'font_url' . $id} = $res['font_url'];
-//    ${'weight' . $id} = $res['weight'];
-//    ${'style' . $id} = $res['style'];
-//
-//    var_dump( $res['size']);
-//
-//for ($i = 1; $i<$id; $i++){
-//    echo <<<HTML
-//
-//    <p>{$res['size']}px</p>
-//<div id='$i' style="font-size: {$res['size']}px;font-weight: {$res['weight']};">CREATE BLOCK</div>
-//HTML;
-//}
-//    return;
-//}
