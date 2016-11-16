@@ -50,7 +50,7 @@ require_once "lib/lib.inc.php";
 
     <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css?<?= rand(0, 99999) ?>" />
     <link rel="stylesheet" type="text/css" href="css/font.css" />
 
 </head>
@@ -79,7 +79,7 @@ require_once "lib/lib.inc.php";
 ?>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="js/main.js?<?php echo rand(0, 99999) ?>"></script>
+<script src="js/main.js?<?= rand(0, 99999) ?>"></script>
 
 </body>
 </html>
