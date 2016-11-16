@@ -1,4 +1,5 @@
 <?php
+
 $dir = 'fonts/';
 $skip = array('.', '..');
 $files = scandir($dir);
@@ -175,6 +176,20 @@ require_once "select_font.php";
     <div class="row">
         <div class="test">
             <div data-id="0" class="text col-md-12">
+                <style type="text/css">
+                    @font-face {
+                        font-family: <?=$fontfamely?>;
+                        src: local('<?=$fontString?>'),
+                        local('<?=$filename?>');
+                        src: url('fonts/<?=$fontString?>.eot');
+                        src: url('fonts/<?=$fontString?>.eot#iefix') format('embedded-opentype'),
+                        url('fonts/<?=$fontString?>.woff') format('woff'),
+                        url('fonts/<?=$fontString?>.ttf') format('truetype'),
+                        url('fonts/<?=$fontString?>.svg') format('svg');
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+                </style>
                 <div class="form-font">
                     (
                     <span class="font"><?=$res['font']?></span>
