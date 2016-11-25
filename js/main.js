@@ -20,21 +20,20 @@ $(document).ready(function() {
         size2 = size-4;
         size3 = Math.ceil(size/2);
 
+        var newStyle = $('style');
+        newStyle.appendTo('head').append("@font-face {\n\
+            font-family: " + font + "; \n\
+            src: local('" + font + "'), \n\
+            local('" + font2 + "'); \n\
+            src: url('/fonts/" + font_url + ".eot'); \n\
+            src: url('/fonts/" + font_url + ".eot#iefix') format('embedded-opentype'),\n\
+            url('/fonts/" + font_url + ".woff') format('woff'),\n\
+            url('/fonts/" + font_url + ".ttf') format('truetype'),\n\
+            url('/fonts/" + font_url + ".svg') format('svg');\n\
+            font-style: normal; \n\
+            font-weight: normal; \n}");
+
         var cloneText = $('.cloneText').clone().removeClass('cloneText').css('display', '').data('id', counter).attr('data-id', counter);
-        cloneText.prepend('<style type="text/css">\
-            @font-face {\n\
-                font-family:' +font+';\n\
-                src: local("'+font+'"),\n\
-                local("'+font2+'");\n\
-                src: url("/fonts/'+font_url+'.eot");\n\
-                src: url("/fonts/'+font_url+'.eot#iefix") format("embedded-opentype"),\n\
-                url("/fonts/'+font_url+'.woff") format("woff"),\n\
-                url("/fonts/'+font_url+'.ttf") format("truetype"),\n\
-                url("/fonts/'+font_url+'.svg") format("svg");\n\
-                font-weight: normal;\n\
-                font-style: normal;\n\
-            }\
-            </style>');
         cloneText.children('.form-font').children('.style').data('object', counter).attr('data-object', counter);
         cloneText.children('.form-font').children('.weight').data('object', counter).attr('data-object', counter);
         cloneText.children('.form-font').children('.font').text(font);

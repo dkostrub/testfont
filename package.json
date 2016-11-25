@@ -1,0 +1,38 @@
+{
+  "name": "testfont.loc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkostrub/testfont.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkostrub/testfont/issues"
+  },
+  "homepage": "https://github.com/dkostrub/testfont#readme",
+  "devDependencies": {
+    "fonsta": "^1.1.1",
+    "fontmin": "^0.9.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10",
+    "jshint": "^2.9.4",
+    "rimraf": "^2.5.4"
+  }
+}
